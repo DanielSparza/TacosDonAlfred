@@ -44,7 +44,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(187, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(106, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(375, 50);
             this.pictureBox1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.lblCapturaProveedores.AutoSize = true;
             this.lblCapturaProveedores.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapturaProveedores.Location = new System.Drawing.Point(248, 25);
+            this.lblCapturaProveedores.Location = new System.Drawing.Point(152, 24);
             this.lblCapturaProveedores.Name = "lblCapturaProveedores";
             this.lblCapturaProveedores.Size = new System.Drawing.Size(271, 27);
             this.lblCapturaProveedores.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(153, 103);
+            this.lblId.Location = new System.Drawing.Point(90, 100);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(22, 23);
             this.lblId.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(187, 103);
+            this.txtBuscar.Location = new System.Drawing.Point(118, 100);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(375, 20);
             this.txtBuscar.TabIndex = 3;
@@ -81,7 +81,7 @@
             // dtgProveedores
             // 
             this.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgProveedores.Location = new System.Drawing.Point(134, 170);
+            this.dtgProveedores.Location = new System.Drawing.Point(79, 153);
             this.dtgProveedores.Name = "dtgProveedores";
             this.dtgProveedores.Size = new System.Drawing.Size(513, 150);
             this.dtgProveedores.TabIndex = 4;
@@ -90,7 +90,7 @@
             // btnInsertar
             // 
             this.btnInsertar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(612, 101);
+            this.btnInsertar.Location = new System.Drawing.Point(512, 90);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(80, 35);
             this.btnInsertar.TabIndex = 5;
@@ -101,7 +101,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(116, 377);
+            this.btnEliminar.Location = new System.Drawing.Point(79, 324);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(91, 35);
             this.btnEliminar.TabIndex = 6;
@@ -112,7 +112,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(371, 377);
+            this.btnModificar.Location = new System.Drawing.Point(285, 324);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(93, 35);
             this.btnModificar.TabIndex = 7;
@@ -123,7 +123,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(657, 377);
+            this.btnRegresar.Location = new System.Drawing.Point(490, 325);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(102, 35);
             this.btnRegresar.TabIndex = 8;
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(671, 397);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
@@ -146,6 +146,7 @@
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblCapturaProveedores);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProveedor";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmProveedor_Load);

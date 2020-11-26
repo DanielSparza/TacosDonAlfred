@@ -41,7 +41,7 @@ namespace PresentacionDatos
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(61, 62);
+            this.lblId.Location = new System.Drawing.Point(53, 28);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(27, 22);
             this.lblId.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace PresentacionDatos
             // 
             this.lblRfc.AutoSize = true;
             this.lblRfc.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRfc.Location = new System.Drawing.Point(61, 148);
+            this.lblRfc.Location = new System.Drawing.Point(30, 85);
             this.lblRfc.Name = "lblRfc";
             this.lblRfc.Size = new System.Drawing.Size(50, 22);
             this.lblRfc.TabIndex = 1;
@@ -59,14 +59,14 @@ namespace PresentacionDatos
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(130, 62);
+            this.txtId.Location = new System.Drawing.Point(115, 28);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(199, 20);
             this.txtId.TabIndex = 2;
             // 
             // txtRfc
             // 
-            this.txtRfc.Location = new System.Drawing.Point(130, 152);
+            this.txtRfc.Location = new System.Drawing.Point(115, 85);
             this.txtRfc.Name = "txtRfc";
             this.txtRfc.Size = new System.Drawing.Size(199, 20);
             this.txtRfc.TabIndex = 3;
@@ -74,7 +74,7 @@ namespace PresentacionDatos
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(64, 247);
+            this.btnGuardar.Location = new System.Drawing.Point(59, 167);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(90, 42);
             this.btnGuardar.TabIndex = 4;
@@ -85,7 +85,7 @@ namespace PresentacionDatos
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(287, 247);
+            this.btnCancelar.Location = new System.Drawing.Point(243, 167);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(102, 42);
             this.btnCancelar.TabIndex = 5;
@@ -98,13 +98,14 @@ namespace PresentacionDatos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(439, 301);
+            this.ClientSize = new System.Drawing.Size(367, 226);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtRfc);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblRfc);
             this.Controls.Add(this.lblId);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProveedorAdd";
             this.Text = "frmProveedorAdd";
             this.ResumeLayout(false);
