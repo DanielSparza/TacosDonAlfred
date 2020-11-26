@@ -9,8 +9,6 @@ namespace ManejadorTacos
     class Program
     {
         static void Main()
-
-
         { 
         
         } 

@@ -36,6 +36,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntidadCategorias.cs" />
+    <Compile Include="EntidadCompras.cs" />
+    <Compile Include="EntidadEmpleados.cs" />
+    <Compile Include="EntidadProductos.cs" />
+    <Compile Include="EntidadProveedor.cs" />
+    <Compile Include="EntidadUsuarios.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
