@@ -44,5 +44,10 @@
     <Compile Include="EntidadUsuarios.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Bases">
+      <HintPath>..\..\..\..\..\source\repos\Bases\Bases\bin\Debug\Bases.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

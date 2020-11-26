@@ -36,7 +36,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorProveedor.cs" />
     <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoADatos\AccesoDatosTacos.csproj">
+      <Project>{d6484934-5e48-44b0-800d-0595cd9bdf3f}</Project>
+      <Name>AccesoDatosTacos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\EntidadesTacos.csproj">
+      <Project>{6dd75cfb-99bd-4af7-af62-c1c28e4b73cc}</Project>
+      <Name>EntidadesTacos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
