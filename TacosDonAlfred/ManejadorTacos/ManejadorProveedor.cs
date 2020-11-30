@@ -12,22 +12,83 @@ namespace ManejadorTacos
     public class ManejadorProveedor
     {
         ConexionProveedor cp = new ConexionProveedor();
+        public string GuardarUsuarios(EntidadUsuarios eu)
+        {
+            try
+            {
+                return cp.GuardarUsuario(eu);
+            }
+            catch (Exception ex)
+            {
+                return "Error al guardar el usuario";
+            }
+        }
+        public string GuardarProveedor(EntidadProveedor ep)
+        {
+            try
+            {
+                return cp.GuardarProveedor(ep);
+            }
+            catch (Exception)
+            {
+                return "Error al guardar el proveedor";
+            }
+        }
+        public string EliminarUsuario(EntidadUsuarios eu)
+        {
+            try
+            {
+                return cp.EliminarUsuario(eu);
+            }
+            catch (Exception)
+            {
+                return "Error al Eliminar el usuario";
+            }
+        }
+        public string EliminarProveedor(EntidadProveedor ep)
+        {
+            try
+            {
+                return cp.EliminarProveedor(ep);
+            }
+            catch (Exception)
+            {
+                return "Error al Eliminar el proveedor";
+            }
+        }
+        public string Actualizarusuario(EntidadUsuarios eu)
+        {
+            try
+            {
+                return cp.ActualizarUsuario(eu);
+            }
+            catch (Exception)
+            {
+                return "Error al Actualizar los Datos del usuario";
+            }
+        }
+        public string ActualizarProveedor(EntidadProveedor ep)
+        {
+            try
+            {
+                return cp.ActualizarProveedor(ep);
+            }
+            catch (Exception)
+            {
+                return "Error al Actualizar los Datos del proveedor";
+            }
+        }
+        public DataSet Mostrar(string nombre)
+        {
+            return cp.Mostrar(nombre);
+        }
+        public string ObtenerId(string nombre)
+        {
 
-        public string Guardar(EntidadProveedor ep)
-        {
-            return cp.Comando(string.Format("insert into Proveedores values(" + " {0}, '{1}')", ep.FkIdUsuario, ep.RFC));
-        }
-        public string Borrar(EntidadProveedor ep)
-        {
-            return cp.Comando(string.Format("delete from Proveedores where FkIdUsuario = {0}", ep.FkIdUsuario));
-        }
-        public string Modificar(EntidadProveedor ep)
-        {
-            return cp.Comando(string.Format("update Proveedores set RFC = '{0}'", ep.RFC));
-        }
-        public DataSet Listado(string q, string tabla)
-        {
-            return cp.Mostrar(q, tabla);
+            DataTable dt = new DataTable();
+            dt = cp.MostrarId(nombre).Tables[0];
+            DataRow r = dt.Rows[0];
+            return r["IdUsuario"].ToString();
         }
     }
 }

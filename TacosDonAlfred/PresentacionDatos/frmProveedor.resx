@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PtbRegresar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAVZJREFUWEfVl10rBVEYhQc5v4aUUjopIUSSTkounEv+FEnxS/wRbiWR75OvZ03e
+        zJnOsW+s2Vn1NO13Ltaa2TPv3rv4D5qEQziHU2hDY1qBZ/iEj+/rG+yDXWNwCQrQgRZswyO8wwFYNQF6
+        4uNy9KMlaCREBDgpR/1ahiewhhgFTcELLKhQ0ypoeqwh9KSv8ACDQqyBPcQm/BZiHfSWsobYgOwh4n7W
+        EFvQA4WwNasIoV6wqEJNalrZQ6hjRohdFRxKheiCGtkVjKvgUDWEOmdVI6CFSyGmVHAoa4CquRaouvbA
+        NgUp8+qf8OcfYco87lsaUsrcui6kzGP7lsVcNdsGJWU+D1obLOaxIRlmPgf3YDHXluwCFGCQ+SzcgcVc
+        ik3pWTnq1wzcgs1cGhZgGm7Aai7FwURTsAM6mOibuAa7eUj/thqL3kTjR7OQDqdHkOVwalZRfAEio48k
+        skfIdgAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

@@ -8,11 +8,12 @@ namespace Entidades
 {
     public class EntidadProveedor
     {
-        public int FkIdUsuario { get; set; }
+        public int IdProveedor { get; set; }
         public string RFC { get; set; }
-        public EntidadProveedor(int idusuario, string rfc)
+
+        public EntidadProveedor(int idProveedor, string rfc)
         {
-            FkIdUsuario = idusuario;
+            IdProveedor = idProveedor;
             RFC = rfc;
         }
     }

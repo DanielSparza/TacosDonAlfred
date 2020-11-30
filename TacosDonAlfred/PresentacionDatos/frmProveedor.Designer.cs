@@ -28,130 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedor));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblCapturaProveedores = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.dtgProveedores = new System.Windows.Forms.DataGridView();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnRegresar = new System.Windows.Forms.Button();
+            this.dtgProveedores = new System.Windows.Forms.DataGridView();
+            this.PtbRegresar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProveedores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbRegresar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(106, 12);
+            this.pictureBox1.BackColor = System.Drawing.Color.Teal;
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 50);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(831, 40);
+            this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
-            // lblCapturaProveedores
+            // lblNombre
             // 
-            this.lblCapturaProveedores.AutoSize = true;
-            this.lblCapturaProveedores.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapturaProveedores.Location = new System.Drawing.Point(152, 24);
-            this.lblCapturaProveedores.Name = "lblCapturaProveedores";
-            this.lblCapturaProveedores.Size = new System.Drawing.Size(271, 27);
-            this.lblCapturaProveedores.TabIndex = 1;
-            this.lblCapturaProveedores.Text = "Captura de proveedores";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.White;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.Black;
+            this.lblNombre.Location = new System.Drawing.Point(27, 95);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(85, 24);
+            this.lblNombre.TabIndex = 47;
+            this.lblNombre.Text = "Nombre";
             // 
-            // lblId
+            // txtNombre
             // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(90, 100);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(22, 23);
-            this.lblId.TabIndex = 2;
-            this.lblId.Text = "Id";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(118, 100);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(375, 20);
-            this.txtBuscar.TabIndex = 3;
-            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
-            // 
-            // dtgProveedores
-            // 
-            this.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgProveedores.Location = new System.Drawing.Point(79, 153);
-            this.dtgProveedores.Name = "dtgProveedores";
-            this.dtgProveedores.Size = new System.Drawing.Size(513, 150);
-            this.dtgProveedores.TabIndex = 4;
-            this.dtgProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProveedores_CellContentClick);
+            this.txtNombre.BackColor = System.Drawing.Color.White;
+            this.txtNombre.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(118, 94);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(375, 29);
+            this.txtNombre.TabIndex = 48;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // btnInsertar
             // 
+            this.btnInsertar.BackColor = System.Drawing.Color.Teal;
+            this.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(512, 90);
+            this.btnInsertar.ForeColor = System.Drawing.Color.White;
+            this.btnInsertar.Location = new System.Drawing.Point(499, 90);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(80, 35);
-            this.btnInsertar.TabIndex = 5;
-            this.btnInsertar.Text = "+";
-            this.btnInsertar.UseVisualStyleBackColor = true;
-            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
+            this.btnInsertar.Size = new System.Drawing.Size(100, 35);
+            this.btnInsertar.TabIndex = 49;
+            this.btnInsertar.Text = "Nuevo";
+            this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(605, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 35);
+            this.button1.TabIndex = 50;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(79, 324);
+            this.btnEliminar.BackColor = System.Drawing.Color.Teal;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(721, 90);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(91, 35);
-            this.btnEliminar.TabIndex = 6;
+            this.btnEliminar.Size = new System.Drawing.Size(101, 35);
+            this.btnEliminar.TabIndex = 51;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
-            // btnModificar
+            // dtgProveedores
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(285, 324);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(93, 35);
-            this.btnModificar.TabIndex = 7;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            this.dtgProveedores.AllowUserToAddRows = false;
+            this.dtgProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgProveedores.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.dtgProveedores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgProveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProveedores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgProveedores.EnableHeadersVisualStyles = false;
+            this.dtgProveedores.GridColor = System.Drawing.Color.White;
+            this.dtgProveedores.Location = new System.Drawing.Point(31, 141);
+            this.dtgProveedores.Name = "dtgProveedores";
+            this.dtgProveedores.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProveedores.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgProveedores.RowHeadersVisible = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dtgProveedores.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgProveedores.Size = new System.Drawing.Size(791, 195);
+            this.dtgProveedores.TabIndex = 54;
+            this.dtgProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProveedores_CellClick);
             // 
-            // btnRegresar
+            // PtbRegresar
             // 
-            this.btnRegresar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(490, 325);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(102, 35);
-            this.btnRegresar.TabIndex = 8;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            this.PtbRegresar.BackColor = System.Drawing.Color.Teal;
+            this.PtbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PtbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("PtbRegresar.Image")));
+            this.PtbRegresar.Location = new System.Drawing.Point(794, 3);
+            this.PtbRegresar.Name = "PtbRegresar";
+            this.PtbRegresar.Size = new System.Drawing.Size(32, 32);
+            this.PtbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PtbRegresar.TabIndex = 55;
+            this.PtbRegresar.TabStop = false;
+            this.PtbRegresar.Click += new System.EventHandler(this.PtbRegresar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Teal;
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 29);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "Proveedores";
             // 
             // frmProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(671, 397);
-            this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnInsertar);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(832, 357);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PtbRegresar);
             this.Controls.Add(this.dtgProveedores);
-            this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.lblId);
-            this.Controls.Add(this.lblCapturaProveedores);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmProveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmProveedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProveedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbRegresar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,14 +218,14 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblCapturaProveedores;
-        private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.DataGridView dtgProveedores;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnInsertar;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.DataGridView dtgProveedores;
+        private System.Windows.Forms.PictureBox PtbRegresar;
+        private System.Windows.Forms.Label label1;
     }
 }
 
