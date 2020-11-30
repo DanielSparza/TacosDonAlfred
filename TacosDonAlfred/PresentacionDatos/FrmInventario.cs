@@ -30,6 +30,7 @@ namespace PresentacionDatos
         private void pbRegresar_Click(object sender, EventArgs e)
         {
             Close();
+            frmPrincipal.v = 0;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -60,6 +61,12 @@ namespace PresentacionDatos
             {
                 MessageBox.Show("Seleccione alguna fila para borrar");
             }
+        }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            frmCategorias c = new frmCategorias();
+            c.ShowDialog();
         }
 
         private void dtgInventario_CellClick(object sender, DataGridViewCellEventArgs e)

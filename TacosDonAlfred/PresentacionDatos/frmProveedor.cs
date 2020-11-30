@@ -35,26 +35,6 @@ namespace PresentacionDatos
             Actualizar();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnInsertar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             Actualizar();
@@ -70,6 +50,7 @@ namespace PresentacionDatos
         private void PtbRegresar_Click(object sender, EventArgs e)
         {
             Close();
+            frmPrincipal.v = 0;
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)

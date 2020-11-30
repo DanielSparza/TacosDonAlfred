@@ -56,7 +56,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(324, 443);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(120, 40);
-            this.btnCancelar.TabIndex = 71;
+            this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -70,7 +70,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(463, 443);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(120, 40);
-            this.btnGuardar.TabIndex = 70;
+            this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -82,7 +82,7 @@
             this.cmbPuesto.Location = new System.Drawing.Point(222, 393);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(361, 34);
-            this.cmbPuesto.TabIndex = 69;
+            this.cmbPuesto.TabIndex = 6;
             // 
             // label6
             // 
@@ -115,7 +115,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(222, 333);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(361, 34);
-            this.txtDireccion.TabIndex = 66;
+            this.txtDireccion.TabIndex = 5;
             // 
             // txtTelefono
             // 
@@ -124,7 +124,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(222, 272);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(361, 34);
-            this.txtTelefono.TabIndex = 65;
+            this.txtTelefono.TabIndex = 4;
             // 
             // label4
             // 
@@ -157,7 +157,7 @@
             this.txtApellidoM.Location = new System.Drawing.Point(222, 205);
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(361, 34);
-            this.txtApellidoM.TabIndex = 62;
+            this.txtApellidoM.TabIndex = 3;
             // 
             // label2
             // 
@@ -178,7 +178,7 @@
             this.txtApellidoP.Location = new System.Drawing.Point(222, 140);
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(361, 34);
-            this.txtApellidoP.TabIndex = 60;
+            this.txtApellidoP.TabIndex = 2;
             // 
             // label11
             // 
@@ -199,7 +199,7 @@
             this.txtNombre.Location = new System.Drawing.Point(222, 78);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(361, 34);
-            this.txtNombre.TabIndex = 58;
+            this.txtNombre.TabIndex = 1;
             // 
             // label1
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmEmpleadosAdd";

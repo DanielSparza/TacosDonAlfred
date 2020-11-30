@@ -14,7 +14,7 @@ namespace PresentacionDatos
         [STAThread]
         static void Main()
         {
-            Application.Run(new frmProveedor());
+            Application.Run(new frmLogin());
         }
     }
 }

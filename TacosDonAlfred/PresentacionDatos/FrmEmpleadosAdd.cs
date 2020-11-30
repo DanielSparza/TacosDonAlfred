@@ -45,7 +45,7 @@ namespace PresentacionDatos
             cmbPuesto.Items.Add("Cajero");
             cmbPuesto.Items.Add("Tortillero");
             cmbPuesto.Items.Add("Mesero");
-            cmbPuesto.Items.Add("Administradors");
+            cmbPuesto.Items.Add("Administrador");
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

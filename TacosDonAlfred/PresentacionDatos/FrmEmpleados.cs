@@ -89,6 +89,7 @@ namespace PresentacionDatos
         private void PtbRegresar_Click(object sender, EventArgs e)
         {
             Close();
+            frmPrincipal.v = 0;
         }
     }
 }

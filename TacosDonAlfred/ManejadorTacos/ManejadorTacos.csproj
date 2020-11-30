@@ -36,6 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorCategoria.cs" />
     <Compile Include="ManejadorEmpleado.cs" />
     <Compile Include="ManejadorInventario.cs" />
     <Compile Include="ManejadorProveedor.cs" />
