@@ -55,6 +55,18 @@
     <Compile Include="FormDiseño.Designer.cs">
       <DependentUpon>FormDiseño.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleados.Designer.cs">
+      <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleadosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleadosAdd.Designer.cs">
+      <DependentUpon>FrmEmpleadosAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDiseño.resx">
       <DependentUpon>FormDiseño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleados.resx">
+      <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleadosAdd.resx">
+      <DependentUpon>FrmEmpleadosAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
