@@ -55,6 +55,18 @@
     <Compile Include="FormDiseño.Designer.cs">
       <DependentUpon>FormDiseño.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoAdd.Designer.cs">
+      <DependentUpon>FrmProductoAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     <EmbeddedResource Include="FormDiseño.resx">
       <DependentUpon>FormDiseño.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductoAdd.resx">
+      <DependentUpon>FrmProductoAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -109,6 +128,9 @@
       <Project>{902773b5-48b9-46d1-80ff-a3a06c0c983f}</Project>
       <Name>ManejadorTacos</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-thick_long_left_arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
