@@ -100,7 +100,7 @@
             this.btnEmpleados.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(66, 68);
-            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.Text = "Usuarios";
             this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // btnCompras
@@ -134,7 +134,7 @@
             this.label1.Location = new System.Drawing.Point(85, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(483, 69);
+            this.label1.Size = new System.Drawing.Size(388, 57);
             this.label1.TabIndex = 47;
             this.label1.Text = "Tacos \"Don Alfred\"";
             // 
@@ -151,7 +151,7 @@
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;

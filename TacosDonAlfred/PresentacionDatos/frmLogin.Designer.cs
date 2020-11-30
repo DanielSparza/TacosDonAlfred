@@ -73,7 +73,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(208, 439);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 29);
+            this.label1.Size = new System.Drawing.Size(103, 23);
             this.label1.TabIndex = 54;
             this.label1.Text = "Contraseña:";
             // 
@@ -84,7 +84,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(340, 436);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(250, 35);
+            this.txtContraseña.Size = new System.Drawing.Size(250, 29);
             this.txtContraseña.TabIndex = 2;
             // 
             // label11
@@ -95,7 +95,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(241, 398);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 29);
+            this.label11.Size = new System.Drawing.Size(74, 23);
             this.label11.TabIndex = 53;
             this.label11.Text = "Usuario:";
             // 
@@ -117,7 +117,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(340, 395);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(250, 35);
+            this.txtUsuario.Size = new System.Drawing.Size(250, 29);
             this.txtUsuario.TabIndex = 1;
             // 
             // btnConfirmar
@@ -136,7 +136,7 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkOrange;
@@ -155,6 +155,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnContraseña)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

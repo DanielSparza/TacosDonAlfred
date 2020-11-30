@@ -88,3 +88,21 @@ C:\Users\Christopher\CarpetasGIT\TacosDonAlfred\proyecto-tacos-don-alfred\TacosD
 C:\Users\Christopher\CarpetasGIT\TacosDonAlfred\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csproj.CopyComplete
 C:\Users\Christopher\CarpetasGIT\TacosDonAlfred\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoADatos.exe
 C:\Users\Christopher\CarpetasGIT\TacosDonAlfred\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoADatos.pdb
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csprojAssemblyReference.cache
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csproj.CoreCompileInputs.cache
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoADatos.exe
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoADatos.pdb
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\AccesoADatos.exe.config
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\AccesoADatos.exe
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\AccesoADatos.pdb
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\EntidadesTacos.exe
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\MySql.Data.dll
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\Google.Protobuf.dll
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\Renci.SshNet.dll
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\EntidadesTacos.pdb
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\EntidadesTacos.exe.config
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\Bases.pdb
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\MySql.Data.xml
+C:\Users\52474\Desktop\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csproj.CopyComplete

@@ -76,11 +76,13 @@ namespace PresentacionDatos
         {
             if (v == 0)
             {
-                
-                //.MdiParent = this;
-                //.Show();
+
+
+                FrmCompras em = new FrmCompras();
+                em.MdiParent = this;
+                em.Show();
                 v++;
-                //frmPrincipal.v = 0; poner en boton de regresar
+
             }
         }
     }

@@ -67,6 +67,18 @@
     <Compile Include="frmCategoriasAdd.Designer.cs">
       <DependentUpon>frmCategoriasAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompras.Designer.cs">
+      <DependentUpon>FrmCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComprasADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComprasADD.Designer.cs">
+      <DependentUpon>FrmComprasADD.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCategoriasAdd.resx">
       <DependentUpon>frmCategoriasAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompras.resx">
+      <DependentUpon>FrmCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComprasADD.resx">
+      <DependentUpon>FrmComprasADD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
