@@ -194,7 +194,7 @@
             this.Compritas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Compritas.Size = new System.Drawing.Size(1124, 553);
             this.Compritas.TabIndex = 58;
-            this.Compritas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.compritas_CellContentClick);
+            this.Compritas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Compritas_CellClick);
             // 
             // FrmCompras
             // 

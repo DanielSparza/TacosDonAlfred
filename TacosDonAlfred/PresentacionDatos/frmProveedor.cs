@@ -19,12 +19,14 @@ namespace PresentacionDatos
         EntidadProveedor ep = new EntidadProveedor(0, "");
         int fila = 0;
         string r = "";
+
         public frmProveedor()
         {
             InitializeComponent();
             mp = new ManejadorProveedor();
             Actualizar();
         }
+
         void Actualizar()
         {
             dtgProveedores.DataSource = mp.Mostrar(txtNombre.Text).Tables[0];

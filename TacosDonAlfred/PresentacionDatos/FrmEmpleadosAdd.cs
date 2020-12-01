@@ -19,11 +19,13 @@ namespace PresentacionDatos
         ManejadorEmpleado me = new ManejadorEmpleado();
         EntidadEmpleados enu = new EntidadEmpleados(0, "");
         EntidadUsuarios eus = new EntidadUsuarios("", "", "", "", "", "");
+
         public FrmEmpleadosAdd()
         {
             InitializeComponent();
             LlenarCombo();
         }
+
         public FrmEmpleadosAdd(EntidadEmpleados eu, EntidadUsuarios u)
         {
             InitializeComponent();
@@ -39,6 +41,7 @@ namespace PresentacionDatos
             index = cmbPuesto.FindString(eu.Puesto);
             cmbPuesto.SelectedIndex = index;
         }
+
         public void LlenarCombo()
         {
             cmbPuesto.Items.Add("Taquero");

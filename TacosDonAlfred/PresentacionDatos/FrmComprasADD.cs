@@ -15,7 +15,6 @@ namespace PresentacionDatos
 {
     public partial class FrmComprasADD : Form
     {
-
         ManejadorCompras mc = new ManejadorCompras();
         EntidadCompras entidadCompras;
 
@@ -25,67 +24,7 @@ namespace PresentacionDatos
             InitializeComponent();
 
         }
-        #region basura
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtfecha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtprecio_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtcantidad_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Compras_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbproveedor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
+        
         private void btnguardar_Click(object sender, EventArgs e)
         {
             if (id > 0)

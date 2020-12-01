@@ -20,6 +20,7 @@ namespace PresentacionDatos
         string r = "";
         string proveedor = "";
         string producto = "";
+
         public FrmCompras()
         {
             InitializeComponent();
@@ -74,7 +75,7 @@ namespace PresentacionDatos
             Actualizar("");
         }
 
-        private void compritas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Compritas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             fila = e.RowIndex;
             entidadCompras.IdCompra = int.Parse(Compritas.Rows[fila].Cells[0].Value.ToString());

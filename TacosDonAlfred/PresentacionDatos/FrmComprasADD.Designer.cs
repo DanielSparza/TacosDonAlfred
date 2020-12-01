@@ -53,8 +53,7 @@
             this.cmbproveedor.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.cmbproveedor.Name = "cmbproveedor";
             this.cmbproveedor.Size = new System.Drawing.Size(344, 37);
-            this.cmbproveedor.TabIndex = 90;
-            this.cmbproveedor.SelectedIndexChanged += new System.EventHandler(this.cmbproveedor_SelectedIndexChanged);
+            this.cmbproveedor.TabIndex = 4;
             // 
             // cmbProducto
             // 
@@ -64,8 +63,7 @@
             this.cmbProducto.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.cmbProducto.Name = "cmbProducto";
             this.cmbProducto.Size = new System.Drawing.Size(344, 37);
-            this.cmbProducto.TabIndex = 89;
-            this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
+            this.cmbProducto.TabIndex = 5;
             // 
             // label4
             // 
@@ -79,7 +77,6 @@
             this.label4.Size = new System.Drawing.Size(70, 29);
             this.label4.TabIndex = 87;
             this.label4.Text = "Fecha";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtprecio
             // 
@@ -89,8 +86,7 @@
             this.txtprecio.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Size = new System.Drawing.Size(344, 35);
-            this.txtprecio.TabIndex = 86;
-            this.txtprecio.TextChanged += new System.EventHandler(this.txtprecio_TextChanged);
+            this.txtprecio.TabIndex = 3;
             // 
             // txtcantidad
             // 
@@ -100,8 +96,7 @@
             this.txtcantidad.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(344, 35);
-            this.txtcantidad.TabIndex = 85;
-            this.txtcantidad.TextChanged += new System.EventHandler(this.txtcantidad_TextChanged);
+            this.txtcantidad.TabIndex = 2;
             // 
             // label3
             // 
@@ -115,7 +110,6 @@
             this.label3.Size = new System.Drawing.Size(97, 29);
             this.label3.TabIndex = 84;
             this.label3.Text = "Cantidad";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -129,7 +123,6 @@
             this.label2.Size = new System.Drawing.Size(73, 29);
             this.label2.TabIndex = 83;
             this.label2.Text = "Precio";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Compras
             // 
@@ -143,7 +136,6 @@
             this.Compras.Size = new System.Drawing.Size(159, 29);
             this.Compras.TabIndex = 82;
             this.Compras.Text = "COMPRAS ADD";
-            this.Compras.Click += new System.EventHandler(this.Compras_Click);
             // 
             // pictureBox1
             // 
@@ -155,7 +147,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(497, 40);
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -169,7 +160,6 @@
             this.label1.Size = new System.Drawing.Size(100, 29);
             this.label1.TabIndex = 80;
             this.label1.Text = "Producto";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnguardar
             // 
@@ -181,7 +171,7 @@
             this.btnguardar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(150, 40);
-            this.btnguardar.TabIndex = 79;
+            this.btnguardar.TabIndex = 6;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
@@ -192,11 +182,11 @@
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btneliminar.ForeColor = System.Drawing.Color.Teal;
-            this.btneliminar.Location = new System.Drawing.Point(69, 313);
+            this.btneliminar.Location = new System.Drawing.Point(69, 308);
             this.btneliminar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(150, 35);
-            this.btneliminar.TabIndex = 78;
+            this.btneliminar.Size = new System.Drawing.Size(150, 40);
+            this.btneliminar.TabIndex = 7;
             this.btneliminar.Text = "Regresar";
             this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
@@ -213,7 +203,6 @@
             this.label11.Size = new System.Drawing.Size(111, 29);
             this.label11.TabIndex = 77;
             this.label11.Text = "Proveedor";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // dtpFecha
             // 
@@ -224,7 +213,7 @@
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(344, 34);
-            this.dtpFecha.TabIndex = 91;
+            this.dtpFecha.TabIndex = 1;
             // 
             // FrmComprasADD
             // 

@@ -12,12 +12,14 @@ namespace PresentacionDatos
         ManejadorEmpleado me;
         int fila = 0;
         string r;
+
         public FrmEmpleados()
         {
             InitializeComponent();
             me = new ManejadorEmpleado();
             Actualizar();
         }
+
         public void Actualizar()
         {
             dgvEmpleados.DataSource = me.Mostrar(txtNombre.Text).Tables[0];

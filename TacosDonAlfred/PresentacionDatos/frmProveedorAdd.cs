@@ -18,10 +18,12 @@ namespace PresentacionDatos
         ManejadorProveedor mp = new ManejadorProveedor();
         EntidadUsuarios eu = new EntidadUsuarios("", "", "", "", "", "");
         EntidadProveedor ep = new EntidadProveedor(0, "");
+
         public frmProveedorAdd()
         {
             InitializeComponent();
         }
+
         public frmProveedorAdd(EntidadProveedor ep, EntidadUsuarios eu)
         {
             InitializeComponent();
