@@ -16,11 +16,6 @@ namespace PresentacionDatos
             mi = new ManejadorInventario();
         }
 
-        private void pbRegresar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void llenarComboCategorias()
         {
             mi.llenarCombobox(cmbCategoria);
@@ -33,8 +28,7 @@ namespace PresentacionDatos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtNombre.Clear();
-            txtDescripcion.Clear();
+            Close();
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)

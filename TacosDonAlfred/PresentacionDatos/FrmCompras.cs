@@ -41,6 +41,7 @@ namespace PresentacionDatos
         private void PtbRegresar_Click(object sender, EventArgs e)
         {
             Close();
+            frmPrincipal.v = 0;
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
@@ -48,19 +49,6 @@ namespace PresentacionDatos
             FrmComprasADD fc = new FrmComprasADD(entidadCompras, proveedor, producto);
             fc.ShowDialog();
             Actualizar("");
-        }
-
-        private void dtgcompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            fila = e.RowIndex;
-            entidadCompras.IdCompra = int.Parse(Compritas.Rows[fila].Cells[0].Value.ToString());
-            entidadCompras.Fecha = (Compritas.Rows[fila].Cells[1].Value.ToString());
-            entidadCompras.Cantidad = double.Parse(Compritas.Rows[fila].Cells[2].Value.ToString());
-            entidadCompras.Precio = double.Parse(Compritas.Rows[fila].Cells[3].Value.ToString());
-            proveedor = Compritas.Rows[fila].Cells[4].Value.ToString();
-            producto = Compritas.Rows[fila].Cells[5].Value.ToString();
-
-            MessageBox.Show(entidadCompras.IdCompra.ToString());
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -95,8 +83,6 @@ namespace PresentacionDatos
             entidadCompras.Precio = double.Parse(Compritas.Rows[fila].Cells[3].Value.ToString());
             proveedor = Compritas.Rows[fila].Cells[4].Value.ToString();
             producto = Compritas.Rows[fila].Cells[5].Value.ToString();
-
-            MessageBox.Show(entidadCompras.IdCompra.ToString());
         }
     }
 }

@@ -76,8 +76,6 @@ namespace PresentacionDatos
         {
             if (v == 0)
             {
-
-
                 FrmCompras em = new FrmCompras();
                 em.MdiParent = this;
                 em.Show();

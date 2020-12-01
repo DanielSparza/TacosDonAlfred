@@ -52,7 +52,7 @@
             this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 4);
+            this.label1.Location = new System.Drawing.Point(12, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 35);
             this.label1.TabIndex = 62;
@@ -65,7 +65,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(1128, 60);
+            this.btnEliminar.Location = new System.Drawing.Point(944, 63);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(120, 40);
             this.btnEliminar.TabIndex = 4;
@@ -80,7 +80,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(878, 60);
+            this.btnNuevo.Location = new System.Drawing.Point(692, 63);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(120, 40);
             this.btnNuevo.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(1003, 60);
+            this.btnActualizar.Location = new System.Drawing.Point(818, 63);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(120, 40);
             this.btnActualizar.TabIndex = 3;
@@ -109,7 +109,7 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(26, 66);
+            this.label10.Location = new System.Drawing.Point(12, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 29);
             this.label10.TabIndex = 58;
@@ -119,9 +119,9 @@
             // 
             this.txtNombre.BackColor = System.Drawing.Color.White;
             this.txtNombre.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(139, 66);
+            this.txtNombre.Location = new System.Drawing.Point(103, 69);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(733, 34);
+            this.txtNombre.Size = new System.Drawing.Size(402, 34);
             this.txtNombre.TabIndex = 1;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -130,10 +130,10 @@
             this.PtbRegresar.BackColor = System.Drawing.Color.Teal;
             this.PtbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("PtbRegresar.Image")));
-            this.PtbRegresar.Location = new System.Drawing.Point(1226, 4);
+            this.PtbRegresar.Location = new System.Drawing.Point(1024, 4);
             this.PtbRegresar.Name = "PtbRegresar";
             this.PtbRegresar.Size = new System.Drawing.Size(32, 32);
-            this.PtbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PtbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PtbRegresar.TabIndex = 63;
             this.PtbRegresar.TabStop = false;
             this.PtbRegresar.Click += new System.EventHandler(this.PtbRegresar_Click);
@@ -141,9 +141,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Teal;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1267, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(1075, 42);
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
@@ -157,7 +158,7 @@
             this.dgvEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
@@ -166,12 +167,12 @@
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmpleados.EnableHeadersVisualStyles = false;
             this.dgvEmpleados.GridColor = System.Drawing.Color.White;
-            this.dgvEmpleados.Location = new System.Drawing.Point(31, 132);
+            this.dgvEmpleados.Location = new System.Drawing.Point(10, 124);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -184,16 +185,16 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
             this.dgvEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmpleados.Size = new System.Drawing.Size(1217, 346);
+            this.dgvEmpleados.Size = new System.Drawing.Size(1054, 526);
             this.dgvEmpleados.TabIndex = 64;
             this.dgvEmpleados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellClick);
             // 
             // FrmEmpleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1270, 513);
+            this.ClientSize = new System.Drawing.Size(1075, 662);
             this.ControlBox = false;
             this.Controls.Add(this.dgvEmpleados);
             this.Controls.Add(this.PtbRegresar);
@@ -204,9 +205,9 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmEmpleados";

@@ -63,9 +63,17 @@ namespace PresentacionDatos
 
         private void dgvCategorias_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            fila = e.RowIndex;
-            ec.IdCategoria = int.Parse(dgvCategorias.Rows[fila].Cells[0].Value.ToString());
-            ec.NombreCategoria = dgvCategorias.Rows[fila].Cells[1].Value.ToString();
+            try
+            {
+                fila = e.RowIndex;
+                ec.IdCategoria = int.Parse(dgvCategorias.Rows[fila].Cells[0].Value.ToString());
+                ec.NombreCategoria = dgvCategorias.Rows[fila].Cells[1].Value.ToString();
+            }
+            catch (Exception)
+            {
+
+            }
+            
         }
     }
 }

@@ -53,9 +53,9 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Teal;
-            this.btnCancelar.Location = new System.Drawing.Point(324, 443);
+            this.btnCancelar.Location = new System.Drawing.Point(92, 318);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(120, 40);
+            this.btnCancelar.Size = new System.Drawing.Size(150, 40);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -67,9 +67,9 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Teal;
-            this.btnGuardar.Location = new System.Drawing.Point(463, 443);
+            this.btnGuardar.Location = new System.Drawing.Point(348, 318);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(120, 40);
+            this.btnGuardar.Size = new System.Drawing.Size(150, 40);
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -79,9 +79,9 @@
             // 
             this.cmbPuesto.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPuesto.FormattingEnabled = true;
-            this.cmbPuesto.Location = new System.Drawing.Point(222, 393);
+            this.cmbPuesto.Location = new System.Drawing.Point(208, 261);
             this.cmbPuesto.Name = "cmbPuesto";
-            this.cmbPuesto.Size = new System.Drawing.Size(361, 34);
+            this.cmbPuesto.Size = new System.Drawing.Size(376, 34);
             this.cmbPuesto.TabIndex = 6;
             // 
             // label6
@@ -90,7 +90,7 @@
             this.label6.BackColor = System.Drawing.Color.DarkOrange;
             this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(27, 403);
+            this.label6.Location = new System.Drawing.Point(13, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 27);
             this.label6.TabIndex = 68;
@@ -102,7 +102,7 @@
             this.label5.BackColor = System.Drawing.Color.DarkOrange;
             this.label5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(27, 340);
+            this.label5.Location = new System.Drawing.Point(13, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 27);
             this.label5.TabIndex = 67;
@@ -112,18 +112,18 @@
             // 
             this.txtDireccion.BackColor = System.Drawing.Color.White;
             this.txtDireccion.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(222, 333);
+            this.txtDireccion.Location = new System.Drawing.Point(208, 221);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(361, 34);
+            this.txtDireccion.Size = new System.Drawing.Size(376, 34);
             this.txtDireccion.TabIndex = 5;
             // 
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.Color.White;
             this.txtTelefono.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(222, 272);
+            this.txtTelefono.Location = new System.Drawing.Point(208, 181);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(361, 34);
+            this.txtTelefono.Size = new System.Drawing.Size(376, 34);
             this.txtTelefono.TabIndex = 4;
             // 
             // label4
@@ -132,7 +132,7 @@
             this.label4.BackColor = System.Drawing.Color.DarkOrange;
             this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(27, 279);
+            this.label4.Location = new System.Drawing.Point(13, 188);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 27);
             this.label4.TabIndex = 64;
@@ -144,7 +144,7 @@
             this.label3.BackColor = System.Drawing.Color.DarkOrange;
             this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(27, 212);
+            this.label3.Location = new System.Drawing.Point(13, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 27);
             this.label3.TabIndex = 63;
@@ -154,9 +154,9 @@
             // 
             this.txtApellidoM.BackColor = System.Drawing.Color.White;
             this.txtApellidoM.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoM.Location = new System.Drawing.Point(222, 205);
+            this.txtApellidoM.Location = new System.Drawing.Point(208, 141);
             this.txtApellidoM.Name = "txtApellidoM";
-            this.txtApellidoM.Size = new System.Drawing.Size(361, 34);
+            this.txtApellidoM.Size = new System.Drawing.Size(376, 34);
             this.txtApellidoM.TabIndex = 3;
             // 
             // label2
@@ -165,7 +165,7 @@
             this.label2.BackColor = System.Drawing.Color.DarkOrange;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(27, 147);
+            this.label2.Location = new System.Drawing.Point(13, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(189, 27);
             this.label2.TabIndex = 61;
@@ -175,9 +175,9 @@
             // 
             this.txtApellidoP.BackColor = System.Drawing.Color.White;
             this.txtApellidoP.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoP.Location = new System.Drawing.Point(222, 140);
+            this.txtApellidoP.Location = new System.Drawing.Point(208, 101);
             this.txtApellidoP.Name = "txtApellidoP";
-            this.txtApellidoP.Size = new System.Drawing.Size(361, 34);
+            this.txtApellidoP.Size = new System.Drawing.Size(376, 34);
             this.txtApellidoP.TabIndex = 2;
             // 
             // label11
@@ -186,7 +186,7 @@
             this.label11.BackColor = System.Drawing.Color.DarkOrange;
             this.label11.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(27, 85);
+            this.label11.Location = new System.Drawing.Point(13, 68);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 27);
             this.label11.TabIndex = 59;
@@ -196,18 +196,18 @@
             // 
             this.txtNombre.BackColor = System.Drawing.Color.White;
             this.txtNombre.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(222, 78);
+            this.txtNombre.Location = new System.Drawing.Point(208, 61);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(361, 34);
+            this.txtNombre.Size = new System.Drawing.Size(376, 34);
             this.txtNombre.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(11, 4);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(415, 35);
             this.label1.TabIndex = 57;
@@ -215,10 +215,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.BackColor = System.Drawing.Color.Teal;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(633, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(596, 40);
             this.pictureBox1.TabIndex = 56;
             this.pictureBox1.TabStop = false;
             // 
@@ -227,7 +228,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(633, 496);
+            this.ClientSize = new System.Drawing.Size(596, 370);
             this.ControlBox = false;
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);

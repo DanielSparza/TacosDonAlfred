@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -53,17 +54,17 @@
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(792, 40);
+            this.panelSuperior.Size = new System.Drawing.Size(1220, 40);
             this.panelSuperior.TabIndex = 51;
             // 
             // pbRegresar
             // 
             this.pbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRegresar.Image = global::PresentacionDatos.Properties.Resources.icons8_thick_long_left_arrow;
-            this.pbRegresar.Location = new System.Drawing.Point(748, 3);
+            this.pbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("pbRegresar.Image")));
+            this.pbRegresar.Location = new System.Drawing.Point(1176, 5);
             this.pbRegresar.Name = "pbRegresar";
             this.pbRegresar.Size = new System.Drawing.Size(32, 32);
-            this.pbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRegresar.TabIndex = 43;
             this.pbRegresar.TabStop = false;
             this.pbRegresar.Click += new System.EventHandler(this.pbRegresar_Click);
@@ -97,9 +98,10 @@
             this.txtBuscar.BackColor = System.Drawing.Color.Gainsboro;
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBuscar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(94, 71);
+            this.txtBuscar.Location = new System.Drawing.Point(97, 64);
+            this.txtBuscar.Multiline = true;
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(291, 28);
+            this.txtBuscar.Size = new System.Drawing.Size(482, 35);
             this.txtBuscar.TabIndex = 1;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -112,7 +114,7 @@
             this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategorias.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategorias.ForeColor = System.Drawing.Color.White;
-            this.btnCategorias.Location = new System.Drawing.Point(659, 62);
+            this.btnCategorias.Location = new System.Drawing.Point(1088, 64);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(120, 40);
             this.btnCategorias.TabIndex = 4;
@@ -129,7 +131,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(533, 62);
+            this.btnEliminar.Location = new System.Drawing.Point(962, 64);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(120, 40);
             this.btnEliminar.TabIndex = 3;
@@ -146,7 +148,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(407, 62);
+            this.btnNuevo.Location = new System.Drawing.Point(836, 64);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(120, 40);
             this.btnNuevo.TabIndex = 2;
@@ -173,7 +175,7 @@
             this.dtgInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgInventario.EnableHeadersVisualStyles = false;
             this.dtgInventario.GridColor = System.Drawing.Color.White;
-            this.dtgInventario.Location = new System.Drawing.Point(10, 117);
+            this.dtgInventario.Location = new System.Drawing.Point(12, 117);
             this.dtgInventario.Name = "dtgInventario";
             this.dtgInventario.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -191,7 +193,7 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
             this.dtgInventario.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgInventario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgInventario.Size = new System.Drawing.Size(770, 312);
+            this.dtgInventario.Size = new System.Drawing.Size(1196, 551);
             this.dtgInventario.TabIndex = 52;
             this.dtgInventario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgInventario_CellClick);
             // 
@@ -200,7 +202,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(792, 438);
+            this.ClientSize = new System.Drawing.Size(1220, 680);
             this.ControlBox = false;
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.label10);

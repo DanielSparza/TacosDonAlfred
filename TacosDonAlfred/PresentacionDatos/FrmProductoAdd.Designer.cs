@@ -39,10 +39,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.pbRegresar = new System.Windows.Forms.PictureBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +77,7 @@
             this.txtDescripcion.BackColor = System.Drawing.Color.White;
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripcion.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(133, 152);
+            this.txtDescripcion.Location = new System.Drawing.Point(133, 155);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(304, 92);
@@ -91,7 +89,7 @@
             this.label2.BackColor = System.Drawing.Color.DarkOrange;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(23, 110);
+            this.label2.Location = new System.Drawing.Point(23, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 29);
             this.label2.TabIndex = 53;
@@ -103,7 +101,7 @@
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(23, 67);
+            this.label1.Location = new System.Drawing.Point(23, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 29);
             this.label1.TabIndex = 52;
@@ -115,14 +113,14 @@
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(133, 107);
+            this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(304, 28);
+            this.txtNombre.Size = new System.Drawing.Size(304, 35);
             this.txtNombre.TabIndex = 2;
             // 
             // cmbCategoria
             // 
             this.cmbCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbCategoria.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(133, 64);
@@ -150,7 +148,6 @@
             // 
             this.panelSuperior.BackColor = System.Drawing.Color.Teal;
             this.panelSuperior.Controls.Add(this.label4);
-            this.panelSuperior.Controls.Add(this.pbRegresar);
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
@@ -168,18 +165,6 @@
             this.label4.Size = new System.Drawing.Size(239, 35);
             this.label4.TabIndex = 45;
             this.label4.Text = "Registrar producto";
-            // 
-            // pbRegresar
-            // 
-            this.pbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRegresar.Image = global::PresentacionDatos.Properties.Resources.icons8_thick_long_left_arrow;
-            this.pbRegresar.Location = new System.Drawing.Point(418, 4);
-            this.pbRegresar.Name = "pbRegresar";
-            this.pbRegresar.Size = new System.Drawing.Size(32, 32);
-            this.pbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRegresar.TabIndex = 44;
-            this.pbRegresar.TabStop = false;
-            this.pbRegresar.Click += new System.EventHandler(this.pbRegresar_Click);
             // 
             // errorProvider
             // 
@@ -212,7 +197,6 @@
             this.Load += new System.EventHandler(this.FrmProductoAdd_Load);
             this.panelSuperior.ResumeLayout(false);
             this.panelSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -230,7 +214,6 @@
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Panel panelSuperior;
-        private System.Windows.Forms.PictureBox pbRegresar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ErrorProvider errorProvider;
     }
