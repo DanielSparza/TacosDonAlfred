@@ -17,7 +17,7 @@ namespace PresentacionDatos
         int index;
         int id = 0;
         ManejadorEmpleado me = new ManejadorEmpleado();
-        EntidadEmpleados enu = new EntidadEmpleados(0, "");
+        EntidadEmpleados enu = new EntidadEmpleados(0, "", "", "");
         EntidadUsuarios eus = new EntidadUsuarios("", "", "", "", "", "");
 
         public FrmEmpleadosAdd()
@@ -35,6 +35,8 @@ namespace PresentacionDatos
             txtApellidoM.Text = u.ApellidoMaterno;
             txtDireccion.Text = u.Domicilio;
             txtTelefono.Text = u.Telefono;
+            txtUsuario.Text = eu.Usuario;
+            txtContraseña.Text = "123";
             enu = eu;
             eus = u;
             LlenarCombo();
@@ -57,14 +59,14 @@ namespace PresentacionDatos
             {
                 if (id > 0)
                 {
-                    string r = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text));
+                    string r = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
                     r = me.Actualizarusuario(new EntidadUsuarios(id.ToString(), txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
                     Close();
                 }
                 else
                 {
                     string r = me.Guardarusuario(new EntidadUsuarios("", txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
-                    r = me.Guardarempleado(new EntidadEmpleados(int.Parse(me.obtenerId(txtNombre.Text)), cmbPuesto.Text));
+                    r = me.Guardarempleado(new EntidadEmpleados(int.Parse(me.obtenerId(txtNombre.Text)), cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
                     Close();
                 }
             }

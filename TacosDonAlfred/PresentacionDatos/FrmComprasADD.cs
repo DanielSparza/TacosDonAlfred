@@ -58,8 +58,8 @@ namespace PresentacionDatos
 
         private void FrmComprasADD_Load(object sender, EventArgs e)
         {
-            mc.LlenarProveedor(cmbproveedor, "SELECT Nombre FROM usuarios, proveedores WHERE IdUsuario=FkIdUsuario", "Usuarios");
-            mc.LlenarProductos(cmbProducto, "SELECT  NombreProducto FROM productos", "Productos");
+            mc.LlenarProveedor(cmbproveedor, "Usuarios");
+            mc.LlenarProductos(cmbProducto, "SELECT  NombreProducto FROM Productos", "Productos");
         }
 
         public FrmComprasADD(EntidadCompras entidadCompras, string proveedor, string producto)

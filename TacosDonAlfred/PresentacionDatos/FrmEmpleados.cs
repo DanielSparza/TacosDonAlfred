@@ -8,7 +8,7 @@ namespace PresentacionDatos
     public partial class FrmEmpleados : Form
     {
         EntidadUsuarios eu = new EntidadUsuarios("", "", "", "", "", "");
-        EntidadEmpleados ee = new EntidadEmpleados(0, "");
+        EntidadEmpleados ee = new EntidadEmpleados(0, "", "", "");
         ManejadorEmpleado me;
         int fila = 0;
         string r;
@@ -41,6 +41,7 @@ namespace PresentacionDatos
             eu.Telefono = dgvEmpleados.Rows[fila].Cells[4].Value.ToString();
             eu.Domicilio = dgvEmpleados.Rows[fila].Cells[5].Value.ToString();
             ee.Puesto = dgvEmpleados.Rows[fila].Cells[6].Value.ToString();
+            ee.Usuario = dgvEmpleados.Rows[fila].Cells[7].Value.ToString();
             ee.IdUsuario = int.Parse(dgvEmpleados.Rows[fila].Cells[0].Value.ToString());
         }
 

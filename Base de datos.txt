@@ -1,0 +1,42 @@
+create database Tacos;
+use Tacos;
+create table Categorias(IdCategoria int primary key auto_increment,
+NombreCategoria varchar(100));
+
+create table Productos(IdProducto int primary key auto_increment,
+NombreProducto varchar(100), Descripcion varchar(100), FkIdCategoria int,
+foreign key(FkIdCategoria) references Categorias(IdCategoria));
+
+create table Usuarios(IdUsuario int primary key auto_increment,
+Nombre varchar(100), ApellidoPaterno varchar(100), ApellidoMaterno varchar(100),
+Telefono varchar(10), Direccion varchar(100));
+
+create table Proveedores(FkIdUsuario int primary key, RFC varchar(16),
+foreign key(FkIdUsuario) references Usuarios(IdUsuario));
+
+create table Empleados(FkIdUsuario int primary key, Puesto varchar(50),
+NombreUsuario varchar(12),Contraseña varchar(32),
+foreign key(FkIdUsuario) references Usuarios(IdUsuario));
+
+create table Compras(IdCompra int primary key auto_increment,
+Fecha date, Cantidad double, Precio double, FkIdProveedor int, FkIdProducto int,
+foreign key(FkIdProveedor) references Proveedores(FkIdUsuario),
+foreign key(FkIdProducto) references Productos(IdProducto));
+
+create table Ventas(IdVenta int primary key AUTO_INCREMENT,
+Fecha date, Mesa int, Estatus enum('En Proceso','Entregado','Cancelado'),FkIdEmpleado int,
+foreign key(FkIdEmpleado) references Empleados(FkIdUsuario));
+
+create table Menu(IdPlatillo int primary key auto_increment,
+Nombre varchar(100), Descripcion varchar(100), Precio double,Imagen varchar(200));
+
+create table DetallesVentas(FkIdVenta int, FkIdPlatillo int,
+Cantidad double, primary key(FkIdVenta,FkIdPlatillo),
+foreign key(FkIdVenta) references Ventas(IdVenta),
+foreign key(FkIdPlatillo) references Menu(IdPlatillo));
+
+create table Almacen(FkIdproducto int primary key, CantidadExistente double,
+foreign key(FkIdproducto) references Productos(IdProducto));
+
+create tabla VentasDiarias(Fecha date,FkIdProducto int, CantidadVendida double,
+primary key(Fecha,FkIdProducto), foreign key(FkIdProducto) references Productos(IdProducto));

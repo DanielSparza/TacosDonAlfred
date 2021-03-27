@@ -11,7 +11,7 @@ namespace AccesoADatos
 {
     public class ConexionProveedor
     {
-        Conectar c = new Conectar("localhost", "root", "", "Tacos");
+        Conectar c = new Conectar("bpg8c4dayi8gbqvpkbss-mysql.services.clever-cloud.com", "ugco6gfvngsb5zld", "eOZrzXzZp47tZ3ptfsEW", "bpg8c4dayi8gbqvpkbss");
         //metodo para insertar, modificar y eliminar
         public string Comando(string q)
         {
@@ -25,7 +25,7 @@ namespace AccesoADatos
         //cambioos
         public string GuardarUsuario(EntidadUsuarios eu)
         {
-            return Comando(string.Format("insert into usuarios values(null,'{0}','{1}','{2}','{3}','{4}')",
+            return Comando(string.Format("insert into Usuarios values(null,'{0}','{1}','{2}','{3}','{4}')",
                 eu.Nombre, eu.ApellidoPaterno, eu.ApellidoMaterno, eu.Telefono, eu.Domicilio));
         }
         public string GuardarProveedor(EntidadProveedor ep)
@@ -35,7 +35,7 @@ namespace AccesoADatos
         }
         public string EliminarUsuario(EntidadUsuarios eu)
         {
-            return Comando(string.Format("delete from usuarios where idusuario = {0}", eu.idUsuario));
+            return Comando(string.Format("delete from Usuarios where IdUsuario = {0}", eu.idUsuario));
         }
         public string EliminarProveedor(EntidadProveedor ep)
         {
@@ -43,7 +43,7 @@ namespace AccesoADatos
         }
         public string ActualizarUsuario(EntidadUsuarios eu)
         {
-            return Comando(string.Format("update usuarios set Nombre = '{0}', ApellidoPaterno = '{1}', ApellidoMaterno = '{2}', Telefono = '{3}', Direccion = '{4}' where idusuario = '{5}'",
+            return Comando(string.Format("update Usuarios set Nombre = '{0}', ApellidoPaterno = '{1}', ApellidoMaterno = '{2}', Telefono = '{3}', Direccion = '{4}' where IdUsuario = '{5}'",
                 eu.Nombre, eu.ApellidoPaterno, eu.ApellidoMaterno, eu.Telefono, eu.Domicilio, eu.idUsuario));
         }
         public string ActualizarProveedor(EntidadProveedor ep)
@@ -52,11 +52,11 @@ namespace AccesoADatos
         }
         public DataSet Mostrar(string nombre)
         {
-            return Mostrar(string.Format("select u.*, p.rfc from usuarios u, proveedores p where u.idusuario = p.fkidusuario and u.nombre like '%{0}%'", nombre), "proveedores");
+            return Mostrar(string.Format("select u.*, p.RFC from Usuarios u, Proveedores p where u.IdUsuario = p.FkIdUsuario and u.Nombre like '%{0}%'", nombre), "proveedores");
         }
         public DataSet MostrarId(string nombre)
         {
-            return Mostrar(string.Format("select u.idusuario from usuarios u where u.nombre = '{0}'", nombre), "usuarios");
+            return Mostrar(string.Format("select u.IdUsuario from Usuarios u where u.Nombre = '{0}'", nombre), "usuarios");
         }
     }
 }

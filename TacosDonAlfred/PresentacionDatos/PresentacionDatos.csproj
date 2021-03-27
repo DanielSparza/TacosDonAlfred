@@ -91,6 +91,12 @@
     <Compile Include="FrmEmpleadosAdd.Designer.cs">
       <DependentUpon>FrmEmpleadosAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticas.Designer.cs">
+      <DependentUpon>FrmEstadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,18 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlatillos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlatillos.Designer.cs">
+      <DependentUpon>FrmPlatillos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlatillosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlatillosAdd.Designer.cs">
+      <DependentUpon>FrmPlatillosAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -150,11 +168,20 @@
     <EmbeddedResource Include="FrmEmpleadosAdd.resx">
       <DependentUpon>FrmEmpleadosAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticas.resx">
+      <DependentUpon>FrmEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlatillos.resx">
+      <DependentUpon>FrmPlatillos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlatillosAdd.resx">
+      <DependentUpon>FrmPlatillosAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -203,6 +230,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-thick_long_left_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

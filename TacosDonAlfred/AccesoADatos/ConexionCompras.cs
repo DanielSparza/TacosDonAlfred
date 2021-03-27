@@ -11,7 +11,7 @@ namespace AccesoADatos
 {
   public  class ConexionCompras
     {
-        Conectar c = new Conectar("localhost", "root", "", "Tacos");
+        Conectar c = new Conectar("bpg8c4dayi8gbqvpkbss-mysql.services.clever-cloud.com", "ugco6gfvngsb5zld", "eOZrzXzZp47tZ3ptfsEW", "bpg8c4dayi8gbqvpkbss");
         //metodo para insertar, modificar y eliminar
         public string Comando(string q)
         {
@@ -34,9 +34,9 @@ namespace AccesoADatos
         {
             return Comando(string.Format("update Compras set Fecha='{0}', Cantidad='{1}', Precio='{2}',FkIdProveedor='{3}',FkIdProducto='{4}'" + " where IdCompra='{5}'", entidadCompras.Fecha, entidadCompras.Cantidad, entidadCompras.Precio, entidadCompras.FkIdProveedor, entidadCompras.FkIdProducto, entidadCompras.IdCompra));
         }
-        public DataSet Listado(string q, string tabla)
+        public DataSet Listado(string tabla)
         {
-            return Mostrar(q, tabla);
+            return Mostrar(string.Format("select u.Nombre from Usuarios u, Proveedores p where u.IdUsuario = p.FkIdUsuario"), tabla);
         }
         public DataSet Mostrar(string nombre)
         {

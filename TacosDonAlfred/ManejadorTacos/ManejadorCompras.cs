@@ -52,9 +52,9 @@ namespace ManejadorTacos
 
 
 
-        public void LlenarProveedor(ComboBox combo, string q, string tabla)
+        public void LlenarProveedor(ComboBox combo, string tabla)
         {
-            combo.DataSource = mc.Mostrar(q, tabla).Tables[0];
+            combo.DataSource = mc.Listado(tabla).Tables[0];
             combo.DisplayMember = "Nombre";
         }
 
