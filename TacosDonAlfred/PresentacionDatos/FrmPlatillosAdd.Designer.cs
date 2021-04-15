@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Compras = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtDescripción = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -40,21 +40,11 @@
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtURLImagen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ep1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ep1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Compras
-            // 
-            this.Compras.AutoSize = true;
-            this.Compras.BackColor = System.Drawing.Color.Teal;
-            this.Compras.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Compras.ForeColor = System.Drawing.Color.White;
-            this.Compras.Location = new System.Drawing.Point(15, 9);
-            this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(134, 23);
-            this.Compras.TabIndex = 84;
-            this.Compras.Text = "PLATILLOS ADD";
             // 
             // pictureBox1
             // 
@@ -76,7 +66,7 @@
             this.txtDescripción.Multiline = true;
             this.txtDescripción.Name = "txtDescripción";
             this.txtDescripción.Size = new System.Drawing.Size(344, 70);
-            this.txtDescripción.TabIndex = 86;
+            this.txtDescripción.TabIndex = 1;
             // 
             // txtNombre
             // 
@@ -86,7 +76,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(344, 29);
-            this.txtNombre.TabIndex = 85;
+            this.txtNombre.TabIndex = 0;
             // 
             // label3
             // 
@@ -117,6 +107,7 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Teal;
@@ -124,13 +115,15 @@
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 40);
-            this.btnGuardar.TabIndex = 88;
+            this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.White;
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.Teal;
@@ -138,9 +131,10 @@
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(150, 40);
-            this.btnRegresar.TabIndex = 89;
+            this.btnRegresar.TabIndex = 5;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label11
             // 
@@ -163,7 +157,7 @@
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(344, 29);
-            this.txtPrecio.TabIndex = 93;
+            this.txtPrecio.TabIndex = 2;
             // 
             // txtURLImagen
             // 
@@ -173,7 +167,7 @@
             this.txtURLImagen.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtURLImagen.Name = "txtURLImagen";
             this.txtURLImagen.Size = new System.Drawing.Size(344, 29);
-            this.txtURLImagen.TabIndex = 94;
+            this.txtURLImagen.TabIndex = 3;
             // 
             // label1
             // 
@@ -188,6 +182,23 @@
             this.label1.TabIndex = 95;
             this.label1.Text = "URL Imagen";
             // 
+            // ep1
+            // 
+            this.ep1.ContainerControl = this;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Teal;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(15, 9);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(244, 23);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "GUARDAR/EDITAR PLATILLOS ";
+            // 
             // FrmPlatillosAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -195,6 +206,7 @@
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(503, 378);
             this.ControlBox = false;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtURLImagen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecio);
@@ -205,7 +217,6 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.Compras);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -216,14 +227,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPlatillosAdd";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ep1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Compras;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtDescripción;
         private System.Windows.Forms.TextBox txtNombre;
@@ -235,5 +245,7 @@
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtURLImagen;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider ep1;
+        private System.Windows.Forms.Label label4;
     }
 }

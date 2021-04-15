@@ -137,7 +137,6 @@ S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosD
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\EntidadesTacos.pdb
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\EntidadesTacos.exe.config
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\Bases.pdb
-S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\bin\Debug\MySql.Data.xml
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csprojAssemblyReference.cache
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csproj.CoreCompileInputs.cache
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\AccesoADatos\obj\Debug\AccesoDatosTacos.csproj.CopyComplete

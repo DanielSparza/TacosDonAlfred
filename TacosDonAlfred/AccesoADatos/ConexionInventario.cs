@@ -8,17 +8,18 @@ namespace AccesoADatos
     public class ConexionInventario
     {
         Conectar c = new Conectar("bpg8c4dayi8gbqvpkbss-mysql.services.clever-cloud.com", "ugco6gfvngsb5zld", "eOZrzXzZp47tZ3ptfsEW", "bpg8c4dayi8gbqvpkbss");
+        //Conectar c = new Conectar("localhost", "root", "", "Tacos");
 
         public string guardarProducto(EntidadProductos productos)
         {
-            return c.Comando(string.Format("insert into Productos values(NULL, '{0}', '{1}', {2})",
-                productos.Nombre, productos.Descripcion, productos.FkIdCategoria));
+            return c.Comando(string.Format("insert into Productos values(NULL, '{0}', '{1}', {2}, '{3}')",
+                productos.Nombre, productos.Descripcion, productos.FkIdCategoria, productos.Medida));
         }
 
         public string modificarProducto(EntidadProductos productos)
         {
-            return c.Comando(string.Format("update Productos set NombreProducto = '{0}', Descripcion = '{1}', FkIdCategoria = {2} where IdProducto = {3}",
-                productos.Nombre, productos.Descripcion, productos.FkIdCategoria, productos.IdProducto));
+            return c.Comando(string.Format("update Productos set NombreProducto = '{0}', Descripcion = '{1}', FkIdCategoria = {2}, Medida = '{3}' where IdProducto = {4}",
+                productos.Nombre, productos.Descripcion, productos.FkIdCategoria, productos.Medida, productos.IdProducto));
         }
 
         public string eliminarProducto(EntidadProductos productos)
@@ -28,7 +29,7 @@ namespace AccesoADatos
 
         public DataSet mostrarProductos(string busqueda)
         {
-            return c.Consultar(string.Format("select p.IdProducto as Id, p.NombreProducto as Producto, p.Descripcion as Descripción, c.NombreCategoria as Categoría from Productos p, Categorias c where p.FkIdCategoria = c.IdCategoria and p.NombreProducto like '%{0}%' order by(p.IdProducto) ASC;", busqueda), "productos");
+            return c.Consultar(string.Format("select p.IdProducto as Id, p.NombreProducto as Producto, p.Descripcion as Descripción, c.NombreCategoria as Categoría, p.Medida from Productos p, Categorias c where p.FkIdCategoria = c.IdCategoria and p.NombreProducto like '%{0}%' order by(p.IdProducto) ASC;", busqueda), "productos");
         }
 
         public DataSet mostrarCategorias()

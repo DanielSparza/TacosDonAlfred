@@ -264,7 +264,6 @@ S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosD
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\AccesoADatos.pdb
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\AccesoADatos.exe.config
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Bases.pdb
-S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\MySql.Data.xml
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Interop.AcroPDFLib.dll
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\AxInterop.AcroPDFLib.dll
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.csprojAssemblyReference.cache
@@ -293,3 +292,5 @@ S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosD
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.csproj.CopyComplete
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.exe
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.pdb
+S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmVentasDiarias.resources
+S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmVentasDiariasAdd.resources

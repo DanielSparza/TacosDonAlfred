@@ -41,7 +41,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnCategorias = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PtbRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPlatillos)).BeginInit();
@@ -65,13 +64,14 @@
             this.PtbRegresar.BackColor = System.Drawing.Color.Teal;
             this.PtbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("PtbRegresar.Image")));
-            this.PtbRegresar.Location = new System.Drawing.Point(1107, 3);
+            this.PtbRegresar.Location = new System.Drawing.Point(1032, 2);
             this.PtbRegresar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.PtbRegresar.Name = "PtbRegresar";
             this.PtbRegresar.Size = new System.Drawing.Size(32, 32);
             this.PtbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PtbRegresar.TabIndex = 60;
             this.PtbRegresar.TabStop = false;
+            this.PtbRegresar.Click += new System.EventHandler(this.PtbRegresar_Click);
             // 
             // pictureBox1
             // 
@@ -80,7 +80,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1154, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(1075, 40);
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
@@ -103,7 +103,7 @@
             this.dtgPlatillos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgPlatillos.EnableHeadersVisualStyles = false;
             this.dtgPlatillos.GridColor = System.Drawing.Color.White;
-            this.dtgPlatillos.Location = new System.Drawing.Point(15, 123);
+            this.dtgPlatillos.Location = new System.Drawing.Point(10, 123);
             this.dtgPlatillos.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.dtgPlatillos.Name = "dtgPlatillos";
             this.dtgPlatillos.ReadOnly = true;
@@ -122,38 +122,43 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
             this.dtgPlatillos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgPlatillos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPlatillos.Size = new System.Drawing.Size(1124, 553);
-            this.dtgPlatillos.TabIndex = 66;
+            this.dtgPlatillos.Size = new System.Drawing.Size(1054, 526);
+            this.dtgPlatillos.TabIndex = 4;
+            this.dtgPlatillos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgPlatillos_CellClick);
             // 
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Teal;
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(505, 63);
+            this.btnNuevo.Location = new System.Drawing.Point(590, 57);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(150, 35);
-            this.btnNuevo.TabIndex = 62;
+            this.btnNuevo.TabIndex = 1;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Teal;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(829, 63);
+            this.btnEliminar.Location = new System.Drawing.Point(914, 57);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(150, 35);
-            this.btnEliminar.TabIndex = 64;
+            this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label10
             // 
@@ -161,7 +166,7 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(15, 69);
+            this.label10.Location = new System.Drawing.Point(10, 69);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 23);
@@ -171,49 +176,36 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Teal;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(667, 63);
+            this.btnModificar.Location = new System.Drawing.Point(752, 57);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(150, 35);
-            this.btnModificar.TabIndex = 63;
+            this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(93, 64);
+            this.txtBuscar.Location = new System.Drawing.Point(88, 64);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(370, 27);
-            this.txtBuscar.TabIndex = 61;
-            // 
-            // btnCategorias
-            // 
-            this.btnCategorias.BackColor = System.Drawing.Color.Teal;
-            this.btnCategorias.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategorias.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategorias.ForeColor = System.Drawing.Color.White;
-            this.btnCategorias.Location = new System.Drawing.Point(989, 63);
-            this.btnCategorias.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(150, 35);
-            this.btnCategorias.TabIndex = 67;
-            this.btnCategorias.Text = "Categorias";
-            this.btnCategorias.UseVisualStyleBackColor = false;
+            this.txtBuscar.Size = new System.Drawing.Size(342, 27);
+            this.txtBuscar.TabIndex = 0;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // FrmPlatillos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1154, 692);
+            this.ClientSize = new System.Drawing.Size(1075, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.btnCategorias);
             this.Controls.Add(this.dtgPlatillos);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnEliminar);
@@ -225,7 +217,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPlatillos";
@@ -250,6 +242,5 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button btnCategorias;
     }
 }

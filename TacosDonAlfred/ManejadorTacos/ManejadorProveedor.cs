@@ -18,7 +18,7 @@ namespace ManejadorTacos
             {
                 return cp.GuardarUsuario(eu);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return "Error al guardar el usuario";
             }

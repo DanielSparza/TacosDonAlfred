@@ -39,8 +39,12 @@
     <Compile Include="ManejadorCategoria.cs" />
     <Compile Include="ManejadorCompras.cs" />
     <Compile Include="ManejadorEmpleado.cs" />
+    <Compile Include="ManejadorEstadisticas.cs" />
     <Compile Include="ManejadorInventario.cs" />
+    <Compile Include="ManejadorLogin.cs" />
+    <Compile Include="ManejadorPlatillos.cs" />
     <Compile Include="ManejadorProveedor.cs" />
+    <Compile Include="ManejadorVentasDiarias.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>

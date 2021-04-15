@@ -8,7 +8,7 @@ namespace PresentacionDatos
     public partial class FrmInventario : Form
     {
         ManejadorInventario mi;
-        EntidadProductos ep = new EntidadProductos(0, "", "", 0);
+        EntidadProductos ep = new EntidadProductos(0, "", "", 0, "");
         int fila, fkid;
 
         public FrmInventario()
@@ -40,11 +40,6 @@ namespace PresentacionDatos
             cargarDatos("");
         }
 
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            cargarDatos(txtBuscar.Text);
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (int.Parse(ep.IdProducto.ToString()) > 0)
@@ -69,6 +64,12 @@ namespace PresentacionDatos
             c.ShowDialog();
         }
 
+        private void txtBuscar_TextChanged_1(object sender, EventArgs e)
+        {
+            cargarDatos(txtBuscar.Text);
+            //cargarDatos(txtBuscar.Text);
+        }
+
         private void dtgInventario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -79,6 +80,7 @@ namespace PresentacionDatos
                 ep.Nombre = dtgInventario.Rows[fila].Cells[1].Value.ToString();
                 ep.Descripcion = dtgInventario.Rows[fila].Cells[2].Value.ToString();
                 fkid = mi.obtenerId(dtgInventario.Rows[fila].Cells[3].Value.ToString()); //obtiene la llave el IdCategoria a partir del nombre de la categoria
+                ep.Medida = dtgInventario.Rows[fila].Cells[4].Value.ToString();
                 ep.FkIdCategoria = fkid;
             }
             catch (FormatException)

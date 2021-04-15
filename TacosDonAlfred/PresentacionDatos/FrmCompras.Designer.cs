@@ -49,6 +49,7 @@
             // btnagregar
             // 
             this.btnagregar.BackColor = System.Drawing.Color.Teal;
+            this.btnagregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnagregar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -57,7 +58,7 @@
             this.btnagregar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(150, 35);
-            this.btnagregar.TabIndex = 2;
+            this.btnagregar.TabIndex = 1;
             this.btnagregar.Text = "Nuevo";
             this.btnagregar.UseVisualStyleBackColor = false;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
@@ -65,6 +66,7 @@
             // btneliminar
             // 
             this.btneliminar.BackColor = System.Drawing.Color.Teal;
+            this.btneliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btneliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,7 +75,7 @@
             this.btneliminar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(150, 35);
-            this.btneliminar.TabIndex = 4;
+            this.btneliminar.TabIndex = 3;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
@@ -87,13 +89,14 @@
             this.label10.Location = new System.Drawing.Point(15, 69);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 29);
+            this.label10.Size = new System.Drawing.Size(72, 23);
             this.label10.TabIndex = 54;
             this.label10.Text = " Buscar ";
             // 
             // btnmodificar
             // 
             this.btnmodificar.BackColor = System.Drawing.Color.Teal;
+            this.btnmodificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmodificar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmodificar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,7 +105,7 @@
             this.btnmodificar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(150, 35);
-            this.btnmodificar.TabIndex = 3;
+            this.btnmodificar.TabIndex = 2;
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.UseVisualStyleBackColor = false;
             this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
@@ -112,8 +115,8 @@
             this.txtBuscar.Location = new System.Drawing.Point(93, 64);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(479, 34);
-            this.txtBuscar.TabIndex = 1;
+            this.txtBuscar.Size = new System.Drawing.Size(479, 29);
+            this.txtBuscar.TabIndex = 0;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // Compras
@@ -125,7 +128,7 @@
             this.Compras.Location = new System.Drawing.Point(15, 5);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(141, 35);
+            this.Compras.Size = new System.Drawing.Size(112, 29);
             this.Compras.TabIndex = 50;
             this.Compras.Text = "COMPRAS";
             // 
@@ -193,13 +196,13 @@
             this.Compritas.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Compritas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Compritas.Size = new System.Drawing.Size(1124, 553);
-            this.Compritas.TabIndex = 58;
+            this.Compritas.TabIndex = 4;
             this.Compritas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Compritas_CellClick);
             // 
             // FrmCompras
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1154, 692);

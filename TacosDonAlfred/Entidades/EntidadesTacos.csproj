@@ -39,9 +39,12 @@
     <Compile Include="EntidadCategorias.cs" />
     <Compile Include="EntidadCompras.cs" />
     <Compile Include="EntidadEmpleados.cs" />
+    <Compile Include="EntidadEstadisticas.cs" />
+    <Compile Include="EntidadPlatillos.cs" />
     <Compile Include="EntidadProductos.cs" />
     <Compile Include="EntidadProveedor.cs" />
     <Compile Include="EntidadUsuarios.cs" />
+    <Compile Include="EntidadVentasDiarias.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>

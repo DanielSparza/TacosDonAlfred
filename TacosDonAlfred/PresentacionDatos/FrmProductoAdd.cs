@@ -8,7 +8,7 @@ namespace PresentacionDatos
     public partial class FrmProductoAdd : Form
     {
         ManejadorInventario mi;
-        EntidadProductos ep = new EntidadProductos(0, "", "", 0);
+        EntidadProductos ep = new EntidadProductos(0, "", "", 0, "");
 
         public FrmProductoAdd()
         {
@@ -35,7 +35,7 @@ namespace PresentacionDatos
         {
             int fkid = mi.obtenerId(cmbCategoria.Text);
 
-            if (mi.validarVacio(txtNombre) && mi.validarVacio(txtDescripcion) && mi.validarNumeros(fkid.ToString()))
+            if (mi.validarVacio(txtNombre) && mi.validarVacio(txtDescripcion) && mi.validarNumeros(fkid.ToString()) && mi.validarVacio(txtMedida))
             {
                 guardarProducto(fkid);
                 MessageBox.Show("Registro añadido correctamente");
@@ -53,14 +53,19 @@ namespace PresentacionDatos
             {
                 errorProvider.SetError(cmbCategoria, "Seleccione una categoría");
             }
+            else if (!mi.validarVacio(txtMedida))
+            {
+                errorProvider.SetError(txtMedida, "No se puede dejar el campo Medida vacío");
+            }
         }
 
         public void guardarProducto(int fkid)
         {
-            ep = new EntidadProductos(0, txtNombre.Text, txtDescripcion.Text, fkid);
+            ep = new EntidadProductos(0, txtNombre.Text, txtDescripcion.Text, fkid, txtMedida.Text);
             mi.guardarProducto(ep);
             txtNombre.Clear();
             txtDescripcion.Clear();
+            txtMedida.Clear();
         }
 
         public void limpiarErrores()
@@ -68,6 +73,7 @@ namespace PresentacionDatos
             errorProvider.SetError(txtNombre, "");
             errorProvider.SetError(txtDescripcion, "");
             errorProvider.SetError(cmbCategoria, "");
+            errorProvider.SetError(txtMedida, "");
         }
     }
 }

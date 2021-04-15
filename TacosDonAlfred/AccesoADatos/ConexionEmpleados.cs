@@ -1,12 +1,14 @@
 ﻿using Entidades;
 using Bases;
 using System.Data;
+using System;
 
 namespace AccesoADatos
 {
     public class ConexionEmpleados
     {
         Conectar c = new Conectar("bpg8c4dayi8gbqvpkbss-mysql.services.clever-cloud.com", "ugco6gfvngsb5zld", "eOZrzXzZp47tZ3ptfsEW", "bpg8c4dayi8gbqvpkbss");
+        //Conectar c = new Conectar("localhost", "root", "", "Tacos");
         public string Comando(string q)
         {
             return c.Comando(q);

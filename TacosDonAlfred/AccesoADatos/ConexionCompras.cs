@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using Bases;
 using Entidades;
 
 namespace AccesoADatos
 {
-  public  class ConexionCompras
+    public  class ConexionCompras
     {
         Conectar c = new Conectar("bpg8c4dayi8gbqvpkbss-mysql.services.clever-cloud.com", "ugco6gfvngsb5zld", "eOZrzXzZp47tZ3ptfsEW", "bpg8c4dayi8gbqvpkbss");
+        //Conectar c = new Conectar("localhost", "root", "", "Tacos");
         //metodo para insertar, modificar y eliminar
         public string Comando(string q)
         {
@@ -40,7 +36,7 @@ namespace AccesoADatos
         }
         public DataSet Mostrar(string nombre)
         {
-            return Mostrar(string.Format("select c.IdCompra,c.Fecha,c.Cantidad,c.Precio,p.NombreProducto, u.Nombre from Compras c, Productos p, Usuarios u,Proveedores pr where c.FkIdProducto=p.IdProducto AND c.FkIdProveedor=pr.FkIdUsuario AND pr.FkIdUsuario=u.IdUsuario and  Fecha  like '%{0}%'", nombre), "Compras");
+            return Mostrar(string.Format("select c.IdCompra,c.Fecha,c.Cantidad,c.Precio,p.NombreProducto as 'Producto', u.Nombre as 'Proveedor' from Compras c, Productos p, Usuarios u,Proveedores pr where c.FkIdProducto=p.IdProducto AND c.FkIdProveedor=pr.FkIdUsuario AND pr.FkIdUsuario=u.IdUsuario and  Fecha  like '%{0}%'", nombre), "Compras");
         }
 
     }

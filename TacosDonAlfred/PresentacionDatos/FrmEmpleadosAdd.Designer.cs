@@ -42,39 +42,41 @@
             this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.Compras = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.White;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Teal;
             this.btnCancelar.Location = new System.Drawing.Point(94, 401);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(150, 40);
-            this.btnCancelar.TabIndex = 8;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Regresar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Teal;
             this.btnGuardar.Location = new System.Drawing.Point(350, 401);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 40);
-            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -86,7 +88,7 @@
             this.cmbPuesto.Location = new System.Drawing.Point(208, 261);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(376, 29);
-            this.cmbPuesto.TabIndex = 6;
+            this.cmbPuesto.TabIndex = 5;
             // 
             // label6
             // 
@@ -119,7 +121,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(208, 221);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(376, 29);
-            this.txtDireccion.TabIndex = 5;
+            this.txtDireccion.TabIndex = 4;
             // 
             // txtTelefono
             // 
@@ -128,7 +130,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(208, 181);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(376, 29);
-            this.txtTelefono.TabIndex = 4;
+            this.txtTelefono.TabIndex = 3;
             // 
             // label4
             // 
@@ -161,7 +163,7 @@
             this.txtApellidoM.Location = new System.Drawing.Point(208, 141);
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(376, 29);
-            this.txtApellidoM.TabIndex = 3;
+            this.txtApellidoM.TabIndex = 2;
             // 
             // label2
             // 
@@ -182,7 +184,7 @@
             this.txtApellidoP.Location = new System.Drawing.Point(208, 101);
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(376, 29);
-            this.txtApellidoP.TabIndex = 2;
+            this.txtApellidoP.TabIndex = 1;
             // 
             // label11
             // 
@@ -203,19 +205,7 @@
             this.txtNombre.Location = new System.Drawing.Point(208, 61);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(376, 29);
-            this.txtNombre.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Teal;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 29);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Nuevo/Modificar Empleados";
+            this.txtNombre.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -258,7 +248,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(208, 306);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(376, 29);
-            this.txtUsuario.TabIndex = 69;
+            this.txtUsuario.TabIndex = 6;
             // 
             // txtContraseña
             // 
@@ -268,7 +258,20 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(376, 29);
-            this.txtContraseña.TabIndex = 73;
+            this.txtContraseña.TabIndex = 7;
+            // 
+            // Compras
+            // 
+            this.Compras.AutoSize = true;
+            this.Compras.BackColor = System.Drawing.Color.Teal;
+            this.Compras.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Compras.ForeColor = System.Drawing.Color.White;
+            this.Compras.Location = new System.Drawing.Point(13, 9);
+            this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Compras.Name = "Compras";
+            this.Compras.Size = new System.Drawing.Size(250, 23);
+            this.Compras.TabIndex = 83;
+            this.Compras.Text = "GUARDAR/EDITAR EMPLEADOS";
             // 
             // FrmEmpleadosAdd
             // 
@@ -277,6 +280,7 @@
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(603, 463);
             this.ControlBox = false;
+            this.Controls.Add(this.Compras);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -295,7 +299,6 @@
             this.Controls.Add(this.txtApellidoP);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -327,11 +330,11 @@
         private System.Windows.Forms.TextBox txtApellidoP;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Label Compras;
     }
 }

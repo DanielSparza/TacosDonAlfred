@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using ManejadorTacos;
@@ -89,7 +82,7 @@ namespace PresentacionDatos
 
         private void btnEliminar_Click_1(object sender, EventArgs e)
         {
-            DialogResult rs = MessageBox.Show("Atencion esta seguro de borrar el usuario? " + eu.Nombre + " " + eu.ApellidoPaterno, "!Atencion", MessageBoxButtons.YesNo);
+            DialogResult rs = MessageBox.Show("¿Esta seguro de borrar el Proveedor? " + eu.Nombre + " " + eu.ApellidoPaterno, "!Atención!", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
                 r = mp.EliminarProveedor(ep);

@@ -38,5 +38,5 @@ foreign key(FkIdPlatillo) references Menu(IdPlatillo));
 create table Almacen(FkIdproducto int primary key, CantidadExistente double,
 foreign key(FkIdproducto) references Productos(IdProducto));
 
-create tabla VentasDiarias(Fecha date,FkIdProducto int, CantidadVendida double,
+create table VentasDiarias(Fecha date,FkIdProducto int, CantidadVendida double,
 primary key(Fecha,FkIdProducto), foreign key(FkIdProducto) references Productos(IdProducto));

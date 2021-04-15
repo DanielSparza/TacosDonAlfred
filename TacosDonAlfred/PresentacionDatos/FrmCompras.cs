@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using ManejadorTacos;
@@ -77,13 +70,20 @@ namespace PresentacionDatos
 
         private void Compritas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            fila = e.RowIndex;
-            entidadCompras.IdCompra = int.Parse(Compritas.Rows[fila].Cells[0].Value.ToString());
-            entidadCompras.Fecha = (Compritas.Rows[fila].Cells[1].Value.ToString());
-            entidadCompras.Cantidad = double.Parse(Compritas.Rows[fila].Cells[2].Value.ToString());
-            entidadCompras.Precio = double.Parse(Compritas.Rows[fila].Cells[3].Value.ToString());
-            proveedor = Compritas.Rows[fila].Cells[4].Value.ToString();
-            producto = Compritas.Rows[fila].Cells[5].Value.ToString();
+            try
+            {
+                fila = e.RowIndex;
+                entidadCompras.IdCompra = int.Parse(Compritas.Rows[fila].Cells[0].Value.ToString());
+                entidadCompras.Fecha = (Compritas.Rows[fila].Cells[1].Value.ToString());
+                entidadCompras.Cantidad = double.Parse(Compritas.Rows[fila].Cells[2].Value.ToString());
+                entidadCompras.Precio = double.Parse(Compritas.Rows[fila].Cells[3].Value.ToString());
+                proveedor = Compritas.Rows[fila].Cells[4].Value.ToString();
+                producto = Compritas.Rows[fila].Cells[5].Value.ToString();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ManejadorTacos;
 using Entidades;
@@ -30,14 +23,37 @@ namespace PresentacionDatos
         {
             try
             {
-                string rs = mc.Guardar(new EntidadCategorias(0, txtCategoria.Text));
-                Close();
+                if (validar(txtCategoria))
+                {
+                    string rs = mc.Guardar(new EntidadCategorias(0, txtCategoria.Text));
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("No se puede dejar el campo vacío", "¡ERROR!");
+                }
             }
             catch (Exception)
             {
                 MessageBox.Show("Error de dato");
                 txtCategoria.Focus();
             }
+        }
+
+        private bool validar(TextBox txt)
+        {
+            bool r;
+
+            if (txt.Text.Length > 0 && txt.Text != null)
+            {
+                r = true;
+            }
+            else
+            {
+                r = false;
+            }
+
+            return r;
         }
     }
 }

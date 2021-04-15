@@ -35,6 +35,9 @@
             this.btnInventario = new System.Windows.Forms.ToolStripButton();
             this.btnEmpleados = new System.Windows.Forms.ToolStripButton();
             this.btnCompras = new System.Windows.Forms.ToolStripButton();
+            this.tsbPlatillos = new System.Windows.Forms.ToolStripButton();
+            this.tsbVentasDiarias = new System.Windows.Forms.ToolStripButton();
+            this.tsbEstadisticas = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -63,10 +66,13 @@
             this.btnInventario,
             this.btnEmpleados,
             this.btnCompras,
+            this.tsbPlatillos,
+            this.tsbVentasDiarias,
+            this.tsbEstadisticas,
             this.btnSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 80);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(69, 445);
+            this.toolStrip1.Size = new System.Drawing.Size(69, 566);
             this.toolStrip1.TabIndex = 48;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -114,6 +120,39 @@
             this.btnCompras.Text = "Compras";
             this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
+            // tsbPlatillos
+            // 
+            this.tsbPlatillos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbPlatillos.Image = ((System.Drawing.Image)(resources.GetObject("tsbPlatillos.Image")));
+            this.tsbPlatillos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbPlatillos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbPlatillos.Name = "tsbPlatillos";
+            this.tsbPlatillos.Size = new System.Drawing.Size(66, 68);
+            this.tsbPlatillos.Text = "Platillos";
+            this.tsbPlatillos.Click += new System.EventHandler(this.tsbPlatillos_Click);
+            // 
+            // tsbVentasDiarias
+            // 
+            this.tsbVentasDiarias.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbVentasDiarias.Image = ((System.Drawing.Image)(resources.GetObject("tsbVentasDiarias.Image")));
+            this.tsbVentasDiarias.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbVentasDiarias.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbVentasDiarias.Name = "tsbVentasDiarias";
+            this.tsbVentasDiarias.Size = new System.Drawing.Size(66, 68);
+            this.tsbVentasDiarias.Text = "Ventas diarias";
+            this.tsbVentasDiarias.Click += new System.EventHandler(this.tsbVentasDiarias_Click);
+            // 
+            // tsbEstadisticas
+            // 
+            this.tsbEstadisticas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbEstadisticas.Image = ((System.Drawing.Image)(resources.GetObject("tsbEstadisticas.Image")));
+            this.tsbEstadisticas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbEstadisticas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEstadisticas.Name = "tsbEstadisticas";
+            this.tsbEstadisticas.Size = new System.Drawing.Size(66, 68);
+            this.tsbEstadisticas.Text = "Estadísticas";
+            this.tsbEstadisticas.Click += new System.EventHandler(this.tsbEstadisticas_Click);
+            // 
             // btnSalir
             // 
             this.btnSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -155,7 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(824, 525);
+            this.ClientSize = new System.Drawing.Size(824, 646);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
@@ -189,5 +228,8 @@
         private System.Windows.Forms.ToolStripButton btnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripButton tsbPlatillos;
+        private System.Windows.Forms.ToolStripButton tsbVentasDiarias;
+        private System.Windows.Forms.ToolStripButton tsbEstadisticas;
     }
 }

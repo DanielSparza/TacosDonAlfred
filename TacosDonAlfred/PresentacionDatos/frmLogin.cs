@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManejadorTacos;
 
 namespace PresentacionDatos
 {
     public partial class frmLogin : Form
     {
         frmPrincipal p = new frmPrincipal();
+        ManejadorLogin ml;
         bool c = false;
 
         public frmLogin()
         {
             InitializeComponent();
+            ml = new ManejadorLogin();
             btnContraseña.ImageLocation = "Contraseña/ocultar.png";
         }
 
@@ -29,21 +25,14 @@ namespace PresentacionDatos
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "admin")
+            if (ml.validarUsuarios(txtUsuario.Text, txtContraseña.Text))
             {
-                if (txtContraseña.Text == "123")
-                {
-                    p.Show();
-                    Hide();
-                }
-                else
-                {
-                    MessageBox.Show("\t   ¡ERROR!\n\n\tContraseña incorrecta        \n\n\t Intentar de nuevo        ");
-                }
+                p.Show();
+                Hide();
             }
             else
             {
-                MessageBox.Show("\t   ¡ERROR!\n\n\tUsuario incorrecto        \n\n\tIntentar de nuevo        ");
+                MessageBox.Show("El nombre de usuario o la contraseña no coinciden con los de un Administrador, revise sus datos y permisos.", "¡ERROR DE INICIO DE SESIÓN!");
             }
         }
 

@@ -168,7 +168,6 @@ S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosD
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.pdb
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.exe.config
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Bases.pdb
-S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\MySql.Data.xml
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csprojAssemblyReference.cache
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CoreCompileInputs.cache
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CopyComplete

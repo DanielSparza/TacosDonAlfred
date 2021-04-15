@@ -43,14 +43,15 @@ namespace PresentacionDatos
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtRfc = new System.Windows.Forms.TextBox();
             this.lblRfc = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Compras = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Teal;
@@ -58,7 +59,7 @@ namespace PresentacionDatos
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 40);
-            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -66,6 +67,7 @@ namespace PresentacionDatos
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.White;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Teal;
@@ -73,8 +75,8 @@ namespace PresentacionDatos
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(150, 40);
-            this.btnCancelar.TabIndex = 8;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "Regresar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -83,8 +85,8 @@ namespace PresentacionDatos
             this.txtDireccion.Location = new System.Drawing.Point(201, 261);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(377, 34);
-            this.txtDireccion.TabIndex = 5;
+            this.txtDireccion.Size = new System.Drawing.Size(377, 29);
+            this.txtDireccion.TabIndex = 4;
             // 
             // lblDireccion
             // 
@@ -93,7 +95,7 @@ namespace PresentacionDatos
             this.lblDireccion.Location = new System.Drawing.Point(18, 264);
             this.lblDireccion.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(102, 29);
+            this.lblDireccion.Size = new System.Drawing.Size(82, 23);
             this.lblDireccion.TabIndex = 48;
             this.lblDireccion.Text = "Direccion";
             // 
@@ -102,8 +104,8 @@ namespace PresentacionDatos
             this.txtTelefono.Location = new System.Drawing.Point(201, 213);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(377, 34);
-            this.txtTelefono.TabIndex = 4;
+            this.txtTelefono.Size = new System.Drawing.Size(377, 29);
+            this.txtTelefono.TabIndex = 3;
             // 
             // lblTelefono
             // 
@@ -112,7 +114,7 @@ namespace PresentacionDatos
             this.lblTelefono.Location = new System.Drawing.Point(18, 216);
             this.lblTelefono.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(95, 29);
+            this.lblTelefono.Size = new System.Drawing.Size(77, 23);
             this.lblTelefono.TabIndex = 47;
             this.lblTelefono.Text = "Telefono";
             // 
@@ -121,8 +123,8 @@ namespace PresentacionDatos
             this.txtApellidoMaterno.Location = new System.Drawing.Point(201, 165);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
-            this.txtApellidoMaterno.Size = new System.Drawing.Size(377, 34);
-            this.txtApellidoMaterno.TabIndex = 3;
+            this.txtApellidoMaterno.Size = new System.Drawing.Size(377, 29);
+            this.txtApellidoMaterno.TabIndex = 2;
             // 
             // lblApellidoMaterno
             // 
@@ -131,7 +133,7 @@ namespace PresentacionDatos
             this.lblApellidoMaterno.Location = new System.Drawing.Point(18, 168);
             this.lblApellidoMaterno.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblApellidoMaterno.Name = "lblApellidoMaterno";
-            this.lblApellidoMaterno.Size = new System.Drawing.Size(171, 29);
+            this.lblApellidoMaterno.Size = new System.Drawing.Size(138, 23);
             this.lblApellidoMaterno.TabIndex = 46;
             this.lblApellidoMaterno.Text = "Apellido Materno";
             // 
@@ -140,8 +142,8 @@ namespace PresentacionDatos
             this.txtApellidoPaterno.Location = new System.Drawing.Point(201, 117);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
-            this.txtApellidoPaterno.Size = new System.Drawing.Size(377, 34);
-            this.txtApellidoPaterno.TabIndex = 2;
+            this.txtApellidoPaterno.Size = new System.Drawing.Size(377, 29);
+            this.txtApellidoPaterno.TabIndex = 1;
             // 
             // lblApellidoPaterno
             // 
@@ -150,7 +152,7 @@ namespace PresentacionDatos
             this.lblApellidoPaterno.Location = new System.Drawing.Point(18, 120);
             this.lblApellidoPaterno.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblApellidoPaterno.Name = "lblApellidoPaterno";
-            this.lblApellidoPaterno.Size = new System.Drawing.Size(168, 29);
+            this.lblApellidoPaterno.Size = new System.Drawing.Size(135, 23);
             this.lblApellidoPaterno.TabIndex = 45;
             this.lblApellidoPaterno.Text = "Apellido Paterno";
             // 
@@ -160,8 +162,8 @@ namespace PresentacionDatos
             this.txtNombre.Location = new System.Drawing.Point(201, 69);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(377, 34);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Size = new System.Drawing.Size(377, 29);
+            this.txtNombre.TabIndex = 0;
             // 
             // lblNombre
             // 
@@ -170,7 +172,7 @@ namespace PresentacionDatos
             this.lblNombre.Location = new System.Drawing.Point(18, 75);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(88, 29);
+            this.lblNombre.Size = new System.Drawing.Size(70, 23);
             this.lblNombre.TabIndex = 44;
             this.lblNombre.Text = "Nombre";
             // 
@@ -179,8 +181,8 @@ namespace PresentacionDatos
             this.txtRfc.Location = new System.Drawing.Point(201, 309);
             this.txtRfc.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtRfc.Name = "txtRfc";
-            this.txtRfc.Size = new System.Drawing.Size(377, 34);
-            this.txtRfc.TabIndex = 6;
+            this.txtRfc.Size = new System.Drawing.Size(377, 29);
+            this.txtRfc.TabIndex = 5;
             // 
             // lblRfc
             // 
@@ -189,22 +191,9 @@ namespace PresentacionDatos
             this.lblRfc.Location = new System.Drawing.Point(18, 312);
             this.lblRfc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRfc.Name = "lblRfc";
-            this.lblRfc.Size = new System.Drawing.Size(53, 29);
+            this.lblRfc.Size = new System.Drawing.Size(42, 23);
             this.lblRfc.TabIndex = 43;
             this.lblRfc.Text = "RFC";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Teal;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(416, 35);
-            this.label1.TabIndex = 56;
-            this.label1.Text = "Guardar/Editar Proveedores";
             // 
             // pictureBox1
             // 
@@ -217,13 +206,26 @@ namespace PresentacionDatos
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
+            // Compras
+            // 
+            this.Compras.AutoSize = true;
+            this.Compras.BackColor = System.Drawing.Color.Teal;
+            this.Compras.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Compras.ForeColor = System.Drawing.Color.White;
+            this.Compras.Location = new System.Drawing.Point(3, 9);
+            this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Compras.Name = "Compras";
+            this.Compras.Size = new System.Drawing.Size(270, 23);
+            this.Compras.TabIndex = 83;
+            this.Compras.Text = "GUARDAR/EDITAR PROVEEDORES";
+            // 
             // frmProveedorAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(593, 428);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Compras);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.lblDireccion);
@@ -266,7 +268,7 @@ namespace PresentacionDatos
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtRfc;
         private System.Windows.Forms.Label lblRfc;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Compras;
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using Bases;
 using Entidades;
 
@@ -12,6 +7,7 @@ namespace AccesoADatos
     public class ConexionProveedor
     {
         Conectar c = new Conectar("bpg8c4dayi8gbqvpkbss-mysql.services.clever-cloud.com", "ugco6gfvngsb5zld", "eOZrzXzZp47tZ3ptfsEW", "bpg8c4dayi8gbqvpkbss");
+        //Conectar c = new Conectar("localhost", "root", "", "Tacos");
         //metodo para insertar, modificar y eliminar
         public string Comando(string q)
         {
