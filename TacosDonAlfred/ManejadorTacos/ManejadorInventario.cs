@@ -16,13 +16,25 @@ namespace ManejadorTacos
             try
             {
                 return ci.guardarProducto(productos);
+                
             }
             catch (Exception e)
             {
                 return "¡Error, no se guardaron los datos! " + e.Message;
             }
         }
-
+        public string guardarAlmacen(string Nombre)
+        {
+            try
+            {
+                int id = ci.IDProducto(Nombre);
+                return ci.guardarAlmacen(id);
+            }
+            catch (Exception e)
+            {
+                return "¡Error, no se guardaron los datos! " + e.Message;
+            }
+        }
         public string modificarProducto(EntidadProductos productos)
         {
             try
@@ -39,6 +51,7 @@ namespace ManejadorTacos
         {
             try
             {
+                string r = ci.eliminaralmacen(productos);
                 return ci.eliminarProducto(productos);
             }
             catch (Exception e)

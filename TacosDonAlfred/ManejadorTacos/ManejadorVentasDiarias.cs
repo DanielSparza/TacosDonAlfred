@@ -15,7 +15,25 @@ namespace ManejadorTacos
         {
             try
             {
-                return cvd.GuardarVentasDiarias(evd);
+                if (VerificarFecha(evd.Fecha, evd.FkIdProducto) == 0)
+                {
+                    if(obtenerCantidadExistente(evd.FkIdProducto) >= evd.CantidadVendida)
+                    {
+                        MessageBox.Show("Entro en ambos");
+                        return cvd.GuardarVentasDiarias(evd);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error cantidad Vendida mayor a cantidad existente en inventario \n" +
+                        "Actualmente solo existen " + obtenerCantidadExistente(evd.FkIdProducto) + " unidades'");
+                        return "Error al Guardar";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error este producto ya fue registrado en la fecha: " + evd.Fecha);
+                    return "Error al Guardar";
+                } 
             }
             catch (Exception)
             {
@@ -48,7 +66,23 @@ namespace ManejadorTacos
             DataRow r = dt.Rows[0];
             return r["IdProducto"].ToString();
         }
+        public double obtenerCantidadExistente(int Id)
+        {
 
+            DataTable dt = new DataTable();
+            dt = cvd.MostrarCantidadExistente(Id).Tables[0];
+            DataRow r = dt.Rows[0];
+            return double.Parse(r["CantidadExistente"].ToString());
+        }
+        public int VerificarFecha(string Fecha,int id)
+        {
+
+            DataTable dt = new DataTable();
+            dt = cvd.VerificarFecha(Fecha,id).Tables[0];
+            DataRow r = dt.Rows[0];
+            return int.Parse(r["Fecha"].ToString());
+        }
+        
         public void llenarCombobox(ComboBox cmb)
         {
             cmb.DataSource = cvd.mostrarProductos().Tables[0];

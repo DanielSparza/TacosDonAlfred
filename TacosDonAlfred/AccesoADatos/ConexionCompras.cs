@@ -20,7 +20,8 @@ namespace AccesoADatos
         }
         public string Guardar(EntidadCompras entidadCompras)
         {
-            return Comando(string.Format("insert into Compras values(" + "null, '{0}','{1}','{2}','{3}','{4}')", entidadCompras.Fecha, entidadCompras.Cantidad, entidadCompras.Precio, entidadCompras.FkIdProveedor, entidadCompras.FkIdProducto));
+            string r = Comando(string.Format("insert into Compras values(" + "null, '{0}','{1}','{2}','{3}','{4}')", entidadCompras.Fecha, entidadCompras.Cantidad, entidadCompras.Precio, entidadCompras.FkIdProveedor, entidadCompras.FkIdProducto));
+            return Comando(string.Format("update Almacen set CantidadExistente = CantidadExistente + '{0}' where FkIdproducto = '{1}'", entidadCompras.Cantidad, entidadCompras.FkIdProducto));
         }
         public string Borrar(EntidadCompras entidadCompras)
         {

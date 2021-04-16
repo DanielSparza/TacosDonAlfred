@@ -7,6 +7,7 @@
         public string Descripcion { get; set; }
         public int FkIdCategoria { get; set; }
         public string Medida { get; set; }
+        
         public EntidadProductos(int idproducto, string nombre, string descripcion, int fkidcategoria, string medida)
         {
             IdProducto = idproducto;
@@ -14,6 +15,7 @@
             Descripcion = descripcion;
             FkIdCategoria = fkidcategoria;
             Medida = medida;
+           
         }
     }
 }

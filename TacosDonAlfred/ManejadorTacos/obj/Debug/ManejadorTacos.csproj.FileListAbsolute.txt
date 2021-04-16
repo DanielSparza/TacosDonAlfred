@@ -173,3 +173,25 @@ S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosD
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CopyComplete
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.exe
 S:\Ejercicios de git\Taller de investigación 2\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.pdb
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\ManejadorTacos.exe.config
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\ManejadorTacos.exe
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\ManejadorTacos.pdb
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\AccesoADatos.exe
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.exe
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Bases.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\MySql.Data.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Google.Protobuf.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Renci.SshNet.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\AccesoADatos.pdb
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\AccesoADatos.exe.config
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.pdb
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.exe.config
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Bases.pdb
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\MySql.Data.xml
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csprojAssemblyReference.cache
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CoreCompileInputs.cache
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CopyComplete
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.exe
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.pdb

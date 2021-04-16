@@ -63,6 +63,7 @@ namespace PresentacionDatos
         {
             ep = new EntidadProductos(0, txtNombre.Text, txtDescripcion.Text, fkid, txtMedida.Text);
             mi.guardarProducto(ep);
+            mi.guardarAlmacen(txtNombre.Text);
             txtNombre.Clear();
             txtDescripcion.Clear();
             txtMedida.Clear();
