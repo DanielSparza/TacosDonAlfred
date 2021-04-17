@@ -86,7 +86,7 @@
             this.Compras.Name = "Compras";
             this.Compras.Size = new System.Drawing.Size(155, 29);
             this.Compras.TabIndex = 62;
-            this.Compras.Text = "ESTADISTICAS";
+            this.Compras.Text = "ESTADíSTICAS";
             // 
             // dtpFechaInicio
             // 
@@ -126,7 +126,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 23);
             this.label10.TabIndex = 90;
-            this.label10.Text = "Grafica:";
+            this.label10.Text = "Gráfica:";
             // 
             // label1
             // 

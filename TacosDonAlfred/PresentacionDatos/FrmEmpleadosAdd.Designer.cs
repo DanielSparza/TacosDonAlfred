@@ -142,7 +142,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 22);
             this.label4.TabIndex = 64;
-            this.label4.Text = "Telefono";
+            this.label4.Text = "Teléfono";
             // 
             // label3
             // 

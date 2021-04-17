@@ -97,7 +97,7 @@ namespace PresentacionDatos
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(82, 23);
             this.lblDireccion.TabIndex = 48;
-            this.lblDireccion.Text = "Direccion";
+            this.lblDireccion.Text = "Dirección";
             // 
             // txtTelefono
             // 
@@ -116,7 +116,7 @@ namespace PresentacionDatos
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(77, 23);
             this.lblTelefono.TabIndex = 47;
-            this.lblTelefono.Text = "Telefono";
+            this.lblTelefono.Text = "Teléfono";
             // 
             // txtApellidoMaterno
             // 
