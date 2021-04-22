@@ -19,6 +19,7 @@ namespace PresentacionDatos
         ManejadorEmpleado me = new ManejadorEmpleado();
         EntidadEmpleados enu = new EntidadEmpleados(0, "", "", "");
         EntidadUsuarios eus = new EntidadUsuarios("", "", "", "", "", "");
+        ManejadorValidar mv = new ManejadorValidar();
 
         public FrmEmpleadosAdd()
         {
@@ -55,20 +56,40 @@ namespace PresentacionDatos
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            Error1.Clear();
             try
             {
-                if (id > 0)
+                if (mv.validarVacio(txtNombre) && mv.validarVacio(txtApellidoP) && mv.validarVacio(txtApellidoM) && mv.validarVacio(txtDireccion) && mv.validarNumeros(txtTelefono.Text) && mv.validarVacio(txtUsuario) && mv.validarVacio(txtContraseña) && mv.validarVacio(cmbPuesto.Text))
                 {
-                    string r = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
-                    r = me.Actualizarusuario(new EntidadUsuarios(id.ToString(), txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
-                    Close();
+                    if (id > 0)
+                    {
+                        string r = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
+                        r = me.Actualizarusuario(new EntidadUsuarios(id.ToString(), txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
+                        Close();
+                    }
+                    else
+                    {
+                        string r = me.Guardarusuario(new EntidadUsuarios("", txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
+                        r = me.Guardarempleado(new EntidadEmpleados(int.Parse(me.obtenerId(txtNombre.Text)), cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
+                        Close();
+                    }
                 }
-                else
-                {
-                    string r = me.Guardarusuario(new EntidadUsuarios("", txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
-                    r = me.Guardarempleado(new EntidadEmpleados(int.Parse(me.obtenerId(txtNombre.Text)), cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
-                    Close();
-                }
+                else if (!mv.validarVacio(txtNombre))
+                    Error1.SetError(txtNombre, "Error Nombre no puede ir vacío");
+                else if (!mv.validarVacio(txtApellidoP))
+                    Error1.SetError(txtApellidoP, "Error, Apellido Paterno no puede ir vacío");
+                else if (!mv.validarVacio(txtApellidoM))
+                    Error1.SetError(txtApellidoM, "Error, Apellido Materno no puede ir vacío");
+                else if (!mv.validarVacio(txtDireccion))
+                    Error1.SetError(txtDireccion, "Error, Direccción no puede ir vacío");
+                else if (!mv.validarNumeros(txtTelefono.Text))
+                    Error1.SetError(txtTelefono, "Error, Telefono no puede ir vacío y solo acepta numeros");
+                else if (!mv.validarVacio(txtUsuario))
+                    Error1.SetError(txtUsuario, "Error, Usuario no puede ir vacío");
+                else if (!mv.validarVacio(txtContraseña))
+                    Error1.SetError(txtContraseña, "Error Contraseña no puede ir vacío");
+                else if (!mv.validarVacio(cmbPuesto.Text))
+                    Error1.SetError(cmbPuesto, "Error, Debe seleccionar un puerto de trabajo");
             }
             catch (Exception)
             {

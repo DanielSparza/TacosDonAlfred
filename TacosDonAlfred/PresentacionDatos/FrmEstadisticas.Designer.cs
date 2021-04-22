@@ -84,7 +84,7 @@
             this.Compras.Location = new System.Drawing.Point(15, 6);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(155, 29);
+            this.Compras.Size = new System.Drawing.Size(195, 35);
             this.Compras.TabIndex = 62;
             this.Compras.Text = "ESTADíSTICAS";
             // 
@@ -96,7 +96,7 @@
             this.dtpFechaInicio.Location = new System.Drawing.Point(628, 70);
             this.dtpFechaInicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(136, 29);
+            this.dtpFechaInicio.Size = new System.Drawing.Size(136, 34);
             this.dtpFechaInicio.TabIndex = 1;
             this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dtpFechaInicio_ValueChanged);
             // 
@@ -111,7 +111,7 @@
             this.cmbGraficas.Location = new System.Drawing.Point(128, 67);
             this.cmbGraficas.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.cmbGraficas.Name = "cmbGraficas";
-            this.cmbGraficas.Size = new System.Drawing.Size(338, 31);
+            this.cmbGraficas.Size = new System.Drawing.Size(338, 37);
             this.cmbGraficas.TabIndex = 0;
             this.cmbGraficas.SelectedIndexChanged += new System.EventHandler(this.cmbGraficas_SelectedIndexChanged);
             // 
@@ -124,7 +124,7 @@
             this.label10.Location = new System.Drawing.Point(31, 70);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 23);
+            this.label10.Size = new System.Drawing.Size(88, 29);
             this.label10.TabIndex = 90;
             this.label10.Text = "Gráfica:";
             // 
@@ -137,7 +137,7 @@
             this.label1.Location = new System.Drawing.Point(488, 70);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 23);
+            this.label1.Size = new System.Drawing.Size(160, 29);
             this.label1.TabIndex = 91;
             this.label1.Text = "Fecha de inicio:";
             // 
@@ -150,7 +150,7 @@
             this.label2.Location = new System.Drawing.Point(788, 70);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 23);
+            this.label2.Size = new System.Drawing.Size(122, 29);
             this.label2.TabIndex = 93;
             this.label2.Text = "Fecha final:";
             // 
@@ -162,7 +162,7 @@
             this.dtpFechaFinal.Location = new System.Drawing.Point(893, 70);
             this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
-            this.dtpFechaFinal.Size = new System.Drawing.Size(136, 29);
+            this.dtpFechaFinal.Size = new System.Drawing.Size(136, 34);
             this.dtpFechaFinal.TabIndex = 2;
             this.dtpFechaFinal.ValueChanged += new System.EventHandler(this.dtpFechaFinal_ValueChanged);
             // 
@@ -215,7 +215,7 @@
             this.lblGastosTotales.ForeColor = System.Drawing.Color.Firebrick;
             this.lblGastosTotales.Location = new System.Drawing.Point(1004, 96);
             this.lblGastosTotales.Name = "lblGastosTotales";
-            this.lblGastosTotales.Size = new System.Drawing.Size(35, 37);
+            this.lblGastosTotales.Size = new System.Drawing.Size(42, 46);
             this.lblGastosTotales.TabIndex = 98;
             this.lblGastosTotales.Text = "$";
             // 
@@ -227,7 +227,7 @@
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
             this.label3.Location = new System.Drawing.Point(1007, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 19);
+            this.label3.Size = new System.Drawing.Size(160, 24);
             this.label3.TabIndex = 97;
             this.label3.Text = "Gastos Totales:";
             // 
@@ -296,7 +296,7 @@
             this.lblTotalVentas.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.lblTotalVentas.Location = new System.Drawing.Point(1025, 96);
             this.lblTotalVentas.Name = "lblTotalVentas";
-            this.lblTotalVentas.Size = new System.Drawing.Size(35, 37);
+            this.lblTotalVentas.Size = new System.Drawing.Size(42, 46);
             this.lblTotalVentas.TabIndex = 103;
             this.lblTotalVentas.Text = "$";
             // 
@@ -308,7 +308,7 @@
             this.label5.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label5.Location = new System.Drawing.Point(1028, 67);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 19);
+            this.label5.Size = new System.Drawing.Size(156, 24);
             this.label5.TabIndex = 102;
             this.label5.Text = "Ventas Totales:";
             // 
@@ -366,7 +366,7 @@
             // 
             // FrmEstadisticas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1220, 680);
@@ -385,6 +385,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

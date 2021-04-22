@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVentasDiariasAdd));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -38,7 +40,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.dtpFechaVenta = new System.Windows.Forms.DateTimePicker();
             this.Compras = new System.Windows.Forms.Label();
+            this.Error1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Error1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -47,7 +51,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(603, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(659, 40);
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
@@ -146,7 +150,7 @@
             this.dtpFechaVenta.Name = "dtpFechaVenta";
             this.dtpFechaVenta.Size = new System.Drawing.Size(376, 34);
             this.dtpFechaVenta.TabIndex = 0;
-            this.dtpFechaVenta.Value = new System.DateTime(2021, 4, 15, 0, 0, 0, 0);
+            this.dtpFechaVenta.Value = new System.DateTime(2021, 4, 19, 0, 0, 0, 0);
             // 
             // Compras
             // 
@@ -161,12 +165,17 @@
             this.Compras.TabIndex = 89;
             this.Compras.Text = "GUARDAR VENTAS DIARIAS";
             // 
+            // Error1
+            // 
+            this.Error1.ContainerControl = this;
+            this.Error1.Icon = ((System.Drawing.Icon)(resources.GetObject("Error1.Icon")));
+            // 
             // FrmVentasDiariasAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(603, 266);
+            this.ClientSize = new System.Drawing.Size(659, 266);
             this.ControlBox = false;
             this.Controls.Add(this.Compras);
             this.Controls.Add(this.dtpFechaVenta);
@@ -180,6 +189,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -188,6 +198,7 @@
             this.Text = "FrmVentasDiariasAdd";
             this.Load += new System.EventHandler(this.FrmVentasDiariasAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Error1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +215,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dtpFechaVenta;
         private System.Windows.Forms.Label Compras;
+        private System.Windows.Forms.ErrorProvider Error1;
     }
 }

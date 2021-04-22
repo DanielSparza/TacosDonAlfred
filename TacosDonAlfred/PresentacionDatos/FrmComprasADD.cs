@@ -9,6 +9,7 @@ namespace PresentacionDatos
     public partial class FrmComprasADD : Form
     {
         ManejadorCompras mc = new ManejadorCompras();
+        ManejadorValidar mv = new ManejadorValidar();
         EntidadCompras entidadCompras;
 
         int id = 0;
@@ -20,27 +21,36 @@ namespace PresentacionDatos
         
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            if (id > 0)
+            Error1.Clear();
+            if (mv.validarVacio(txtcantidad) && mv.validarVacio(txtprecio))
             {
-                entidadCompras = new EntidadCompras(id, dtpFecha.Text, double.Parse(txtcantidad.Text), double.Parse(txtprecio.Text), mc.GetIdProveedor(cmbproveedor.Text), mc.GetIdProductos(cmbProducto.Text));
-                string r = mc.ModificarCompra(entidadCompras);
-                Close();
-
-            }
-            else
-            {
-                try
+                if (id > 0)
                 {
-                    string rs = mc.GuardaCompra(new EntidadCompras(0, dtpFecha.Text, double.Parse(txtcantidad.Text), double.Parse(txtprecio.Text), mc.GetIdProveedor(cmbproveedor.Text), mc.GetIdProductos(cmbProducto.Text)));
-
+                    entidadCompras = new EntidadCompras(id, dtpFecha.Text, double.Parse(txtcantidad.Text), double.Parse(txtprecio.Text), mc.GetIdProveedor(cmbproveedor.Text), mc.GetIdProductos(cmbProducto.Text));
+                    string r = mc.ModificarCompra(entidadCompras);
                     Close();
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error de dato");
 
                 }
+                else
+                {
+                    try
+                    {
+                        string rs = mc.GuardaCompra(new EntidadCompras(0, dtpFecha.Text, double.Parse(txtcantidad.Text), double.Parse(txtprecio.Text), mc.GetIdProveedor(cmbproveedor.Text), mc.GetIdProductos(cmbProducto.Text)));
+
+                        Close();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Error de dato");
+
+                    }
+                }
             }
+            else if (!mv.validarVacio(txtcantidad))
+                Error1.SetError(txtcantidad, "Error, Cantidad no puede ir vacio");
+            else if (!mv.validarVacio(txtprecio))
+                Error1.SetError(txtprecio, "Error Precio no puede ir vacio");
+            
         }
 
         private void btneliminar_Click(object sender, EventArgs e)

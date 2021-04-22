@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPlatillosAdd));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtDescripción = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -53,7 +54,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(503, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(518, 40);
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
             // 
@@ -75,7 +76,7 @@
             this.txtNombre.Location = new System.Drawing.Point(138, 62);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(344, 29);
+            this.txtNombre.Size = new System.Drawing.Size(344, 35);
             this.txtNombre.TabIndex = 0;
             // 
             // label3
@@ -87,7 +88,7 @@
             this.label3.Location = new System.Drawing.Point(15, 65);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 23);
+            this.label3.Size = new System.Drawing.Size(88, 29);
             this.label3.TabIndex = 92;
             this.label3.Text = "Nombre";
             // 
@@ -100,7 +101,7 @@
             this.label2.Location = new System.Drawing.Point(15, 114);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 23);
+            this.label2.Size = new System.Drawing.Size(125, 29);
             this.label2.TabIndex = 91;
             this.label2.Text = "Descripción";
             // 
@@ -145,7 +146,7 @@
             this.label11.Location = new System.Drawing.Point(15, 205);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 23);
+            this.label11.Size = new System.Drawing.Size(73, 29);
             this.label11.TabIndex = 90;
             this.label11.Text = "Precio";
             // 
@@ -156,7 +157,7 @@
             this.txtPrecio.Location = new System.Drawing.Point(138, 202);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(344, 29);
+            this.txtPrecio.Size = new System.Drawing.Size(344, 35);
             this.txtPrecio.TabIndex = 2;
             // 
             // txtURLImagen
@@ -166,7 +167,7 @@
             this.txtURLImagen.Location = new System.Drawing.Point(138, 253);
             this.txtURLImagen.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtURLImagen.Name = "txtURLImagen";
-            this.txtURLImagen.Size = new System.Drawing.Size(344, 29);
+            this.txtURLImagen.Size = new System.Drawing.Size(344, 35);
             this.txtURLImagen.TabIndex = 3;
             // 
             // label1
@@ -178,13 +179,14 @@
             this.label1.Location = new System.Drawing.Point(15, 256);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 23);
+            this.label1.Size = new System.Drawing.Size(127, 29);
             this.label1.TabIndex = 95;
             this.label1.Text = "URL Imagen";
             // 
             // ep1
             // 
             this.ep1.ContainerControl = this;
+            this.ep1.Icon = ((System.Drawing.Icon)(resources.GetObject("ep1.Icon")));
             // 
             // label4
             // 
@@ -195,16 +197,16 @@
             this.label4.Location = new System.Drawing.Point(15, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 23);
+            this.label4.Size = new System.Drawing.Size(307, 29);
             this.label4.TabIndex = 96;
             this.label4.Text = "GUARDAR/EDITAR PLATILLOS ";
             // 
             // FrmPlatillosAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(503, 378);
+            this.ClientSize = new System.Drawing.Size(518, 378);
             this.ControlBox = false;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtURLImagen);

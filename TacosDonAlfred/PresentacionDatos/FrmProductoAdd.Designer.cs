@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductoAdd));
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -70,7 +71,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(23, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 23);
+            this.label3.Size = new System.Drawing.Size(132, 29);
             this.label3.TabIndex = 54;
             this.label3.Text = "Descripción:";
             // 
@@ -93,7 +94,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(23, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.Size = new System.Drawing.Size(95, 29);
             this.label2.TabIndex = 53;
             this.label2.Text = "Nombre:";
             // 
@@ -105,7 +106,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 23);
+            this.label1.Size = new System.Drawing.Size(111, 29);
             this.label1.TabIndex = 52;
             this.label1.Text = "Categoría:";
             // 
@@ -127,7 +128,7 @@
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(133, 64);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(304, 31);
+            this.cmbCategoria.Size = new System.Drawing.Size(304, 37);
             this.cmbCategoria.TabIndex = 0;
             // 
             // btnCancelar
@@ -153,7 +154,7 @@
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(462, 40);
+            this.panelSuperior.Size = new System.Drawing.Size(484, 40);
             this.panelSuperior.TabIndex = 55;
             // 
             // Compras
@@ -165,13 +166,14 @@
             this.Compras.Location = new System.Drawing.Point(6, 9);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(190, 23);
+            this.Compras.Size = new System.Drawing.Size(241, 29);
             this.Compras.TabIndex = 83;
             this.Compras.Text = "GUARDAR PRODUCTOS";
             // 
             // errorProvider
             // 
             this.errorProvider.ContainerControl = this;
+            this.errorProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider.Icon")));
             // 
             // label4
             // 
@@ -181,7 +183,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(23, 260);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 23);
+            this.label4.Size = new System.Drawing.Size(87, 29);
             this.label4.TabIndex = 57;
             this.label4.Text = "Medida:";
             // 
@@ -198,10 +200,10 @@
             // 
             // FrmProductoAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(462, 383);
+            this.ClientSize = new System.Drawing.Size(484, 383);
             this.ControlBox = false;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtMedida);
@@ -216,6 +218,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCategoriasAdd));
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Error1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Error1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConfirmar
@@ -61,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 29);
+            this.label1.Size = new System.Drawing.Size(212, 35);
             this.label1.TabIndex = 48;
             this.label1.Text = "Nueva Categoría";
             // 
@@ -89,7 +93,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(12, 69);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 23);
+            this.label10.Size = new System.Drawing.Size(100, 29);
             this.label10.TabIndex = 46;
             this.label10.Text = "Nombre: ";
             // 
@@ -99,7 +103,7 @@
             this.txtCategoria.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCategoria.Location = new System.Drawing.Point(118, 66);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(340, 29);
+            this.txtCategoria.Size = new System.Drawing.Size(340, 35);
             this.txtCategoria.TabIndex = 0;
             // 
             // pictureBox1
@@ -108,17 +112,22 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(470, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(496, 40);
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
+            // Error1
+            // 
+            this.Error1.ContainerControl = this;
+            this.Error1.Icon = ((System.Drawing.Icon)(resources.GetObject("Error1.Icon")));
+            // 
             // frmCategoriasAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(470, 170);
+            this.ClientSize = new System.Drawing.Size(496, 170);
             this.ControlBox = false;
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.label1);
@@ -128,11 +137,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmCategoriasAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCategoriasAdd";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Error1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +157,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ErrorProvider Error1;
     }
 }

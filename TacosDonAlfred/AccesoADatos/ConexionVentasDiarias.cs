@@ -28,6 +28,7 @@ namespace AccesoADatos
 
         public string EliminarVentaDiaria(EntidadVentasDiarias evd)
         {
+            string r = Comando(string.Format("update Almacen set CantidadExistente = CantidadExistente + '{0}' where FkIdproducto = '{1}'", evd.CantidadVendida, evd.FkIdProducto));
             return Comando(string.Format("delete from VentasDiarias where FkIdProducto = {0} and Fecha = '{1}'",
                 evd.FkIdProducto, evd.Fecha));
         }

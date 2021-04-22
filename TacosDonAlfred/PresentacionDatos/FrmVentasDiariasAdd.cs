@@ -37,12 +37,12 @@ namespace PresentacionDatos
                 }
                 else
                 {
-                    MessageBox.Show("Solo se aceptan numeros en el campo cantidad");
+                    Error1.SetError(txtCantidad, "Error, Cantidad solo acepta numeros");
                 }
             }
             else
             {
-                MessageBox.Show("No se puede dejar el campo vacio");
+                Error1.SetError(txtCantidad, "Error, Cantidad no puede ir vacío");
             }
         }
 

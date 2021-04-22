@@ -55,7 +55,7 @@
             this.Compras.Location = new System.Drawing.Point(15, 5);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(121, 29);
+            this.Compras.Size = new System.Drawing.Size(151, 35);
             this.Compras.TabIndex = 59;
             this.Compras.Text = "PLATILLOS";
             // 
@@ -116,6 +116,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgPlatillos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgPlatillos.RowHeadersVisible = false;
+            this.dtgPlatillos.RowHeadersWidth = 51;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
@@ -169,7 +170,7 @@
             this.label10.Location = new System.Drawing.Point(10, 69);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 23);
+            this.label10.Size = new System.Drawing.Size(90, 29);
             this.label10.TabIndex = 65;
             this.label10.Text = " Buscar ";
             // 
@@ -195,13 +196,13 @@
             this.txtBuscar.Location = new System.Drawing.Point(88, 64);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(342, 27);
+            this.txtBuscar.Size = new System.Drawing.Size(342, 32);
             this.txtBuscar.TabIndex = 0;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // FrmPlatillos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1075, 662);
@@ -217,6 +218,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

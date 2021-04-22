@@ -29,6 +29,8 @@ namespace PresentacionDatos
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedorAdd));
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -45,7 +47,9 @@ namespace PresentacionDatos
             this.lblRfc = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Compras = new System.Windows.Forms.Label();
+            this.Error1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Error1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -85,7 +89,7 @@ namespace PresentacionDatos
             this.txtDireccion.Location = new System.Drawing.Point(201, 261);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(377, 29);
+            this.txtDireccion.Size = new System.Drawing.Size(377, 34);
             this.txtDireccion.TabIndex = 4;
             // 
             // lblDireccion
@@ -95,7 +99,7 @@ namespace PresentacionDatos
             this.lblDireccion.Location = new System.Drawing.Point(18, 264);
             this.lblDireccion.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(82, 23);
+            this.lblDireccion.Size = new System.Drawing.Size(102, 29);
             this.lblDireccion.TabIndex = 48;
             this.lblDireccion.Text = "Dirección";
             // 
@@ -104,7 +108,7 @@ namespace PresentacionDatos
             this.txtTelefono.Location = new System.Drawing.Point(201, 213);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(377, 29);
+            this.txtTelefono.Size = new System.Drawing.Size(377, 34);
             this.txtTelefono.TabIndex = 3;
             // 
             // lblTelefono
@@ -114,7 +118,7 @@ namespace PresentacionDatos
             this.lblTelefono.Location = new System.Drawing.Point(18, 216);
             this.lblTelefono.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(77, 23);
+            this.lblTelefono.Size = new System.Drawing.Size(95, 29);
             this.lblTelefono.TabIndex = 47;
             this.lblTelefono.Text = "Teléfono";
             // 
@@ -123,7 +127,7 @@ namespace PresentacionDatos
             this.txtApellidoMaterno.Location = new System.Drawing.Point(201, 165);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
-            this.txtApellidoMaterno.Size = new System.Drawing.Size(377, 29);
+            this.txtApellidoMaterno.Size = new System.Drawing.Size(377, 34);
             this.txtApellidoMaterno.TabIndex = 2;
             // 
             // lblApellidoMaterno
@@ -133,7 +137,7 @@ namespace PresentacionDatos
             this.lblApellidoMaterno.Location = new System.Drawing.Point(18, 168);
             this.lblApellidoMaterno.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblApellidoMaterno.Name = "lblApellidoMaterno";
-            this.lblApellidoMaterno.Size = new System.Drawing.Size(138, 23);
+            this.lblApellidoMaterno.Size = new System.Drawing.Size(171, 29);
             this.lblApellidoMaterno.TabIndex = 46;
             this.lblApellidoMaterno.Text = "Apellido Materno";
             // 
@@ -142,7 +146,7 @@ namespace PresentacionDatos
             this.txtApellidoPaterno.Location = new System.Drawing.Point(201, 117);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
-            this.txtApellidoPaterno.Size = new System.Drawing.Size(377, 29);
+            this.txtApellidoPaterno.Size = new System.Drawing.Size(377, 34);
             this.txtApellidoPaterno.TabIndex = 1;
             // 
             // lblApellidoPaterno
@@ -152,7 +156,7 @@ namespace PresentacionDatos
             this.lblApellidoPaterno.Location = new System.Drawing.Point(18, 120);
             this.lblApellidoPaterno.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblApellidoPaterno.Name = "lblApellidoPaterno";
-            this.lblApellidoPaterno.Size = new System.Drawing.Size(135, 23);
+            this.lblApellidoPaterno.Size = new System.Drawing.Size(168, 29);
             this.lblApellidoPaterno.TabIndex = 45;
             this.lblApellidoPaterno.Text = "Apellido Paterno";
             // 
@@ -162,7 +166,7 @@ namespace PresentacionDatos
             this.txtNombre.Location = new System.Drawing.Point(201, 69);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(377, 29);
+            this.txtNombre.Size = new System.Drawing.Size(377, 34);
             this.txtNombre.TabIndex = 0;
             // 
             // lblNombre
@@ -172,7 +176,7 @@ namespace PresentacionDatos
             this.lblNombre.Location = new System.Drawing.Point(18, 75);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(70, 23);
+            this.lblNombre.Size = new System.Drawing.Size(88, 29);
             this.lblNombre.TabIndex = 44;
             this.lblNombre.Text = "Nombre";
             // 
@@ -181,7 +185,7 @@ namespace PresentacionDatos
             this.txtRfc.Location = new System.Drawing.Point(201, 309);
             this.txtRfc.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtRfc.Name = "txtRfc";
-            this.txtRfc.Size = new System.Drawing.Size(377, 29);
+            this.txtRfc.Size = new System.Drawing.Size(377, 34);
             this.txtRfc.TabIndex = 5;
             // 
             // lblRfc
@@ -191,7 +195,7 @@ namespace PresentacionDatos
             this.lblRfc.Location = new System.Drawing.Point(18, 312);
             this.lblRfc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRfc.Name = "lblRfc";
-            this.lblRfc.Size = new System.Drawing.Size(42, 23);
+            this.lblRfc.Size = new System.Drawing.Size(53, 29);
             this.lblRfc.TabIndex = 43;
             this.lblRfc.Text = "RFC";
             // 
@@ -202,7 +206,7 @@ namespace PresentacionDatos
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(593, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(618, 40);
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
@@ -215,16 +219,21 @@ namespace PresentacionDatos
             this.Compras.Location = new System.Drawing.Point(3, 9);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(270, 23);
+            this.Compras.Size = new System.Drawing.Size(344, 29);
             this.Compras.TabIndex = 83;
             this.Compras.Text = "GUARDAR/EDITAR PROVEEDORES";
             // 
+            // Error1
+            // 
+            this.Error1.ContainerControl = this;
+            this.Error1.Icon = ((System.Drawing.Icon)(resources.GetObject("Error1.Icon")));
+            // 
             // frmProveedorAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(593, 428);
+            this.ClientSize = new System.Drawing.Size(618, 428);
             this.Controls.Add(this.Compras);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDireccion);
@@ -243,11 +252,13 @@ namespace PresentacionDatos
             this.Controls.Add(this.btnGuardar);
             this.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "frmProveedorAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProveedorAdd";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Error1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,5 +281,6 @@ namespace PresentacionDatos
         private System.Windows.Forms.Label lblRfc;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Compras;
+        private System.Windows.Forms.ErrorProvider Error1;
     }
 }

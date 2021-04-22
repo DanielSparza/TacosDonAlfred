@@ -40,7 +40,7 @@ namespace AccesoADatos
 
         public DataSet MostrarAlmacen(string nombre)
         {
-            return Mostrar(string.Format("SELECT p.NombreProducto AS 'Producto', a.CantidadExistente AS 'Cantidad Existente' FROM almacen a, productos p WHERE a.FkIdproducto = p.IdProducto GROUP BY a.FkIdproducto ASC;"), "almacen");
+            return Mostrar(string.Format("SELECT p.NombreProducto AS 'Producto', a.CantidadExistente AS 'Cantidad Existente' FROM Almacen a, Productos p WHERE a.FkIdproducto = p.IdProducto GROUP BY a.FkIdproducto;"), "Almacen");
         }
     }
 }

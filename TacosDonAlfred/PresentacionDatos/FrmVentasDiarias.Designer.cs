@@ -88,6 +88,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgVentasDiarias.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgVentasDiarias.RowHeadersVisible = false;
+            this.dtgVentasDiarias.RowHeadersWidth = 51;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
@@ -138,7 +139,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(11, 74);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 22);
+            this.label10.Size = new System.Drawing.Size(119, 29);
             this.label10.TabIndex = 69;
             this.label10.Text = "Producto";
             // 
@@ -163,7 +164,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(477, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 22);
+            this.label2.Size = new System.Drawing.Size(82, 29);
             this.label2.TabIndex = 74;
             this.label2.Text = "Fecha";
             // 
@@ -175,7 +176,7 @@
             this.dtpFechaFiltro.Location = new System.Drawing.Point(551, 70);
             this.dtpFechaFiltro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaFiltro.Name = "dtpFechaFiltro";
-            this.dtpFechaFiltro.Size = new System.Drawing.Size(217, 29);
+            this.dtpFechaFiltro.Size = new System.Drawing.Size(217, 34);
             this.dtpFechaFiltro.TabIndex = 1;
             this.dtpFechaFiltro.ValueChanged += new System.EventHandler(this.dtpFechaFiltro_ValueChanged);
             // 
@@ -185,7 +186,7 @@
             this.txtProducto.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProducto.Location = new System.Drawing.Point(113, 70);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(349, 29);
+            this.txtProducto.Size = new System.Drawing.Size(349, 34);
             this.txtProducto.TabIndex = 0;
             this.txtProducto.TextChanged += new System.EventHandler(this.txtProducto_TextChanged);
             // 
@@ -198,13 +199,13 @@
             this.Compras.Location = new System.Drawing.Point(10, 8);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(176, 29);
+            this.Compras.Size = new System.Drawing.Size(223, 35);
             this.Compras.TabIndex = 77;
             this.Compras.Text = "VENTAS DIARIAS";
             // 
             // FrmVentasDiarias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1075, 662);
@@ -221,6 +222,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmVentasDiarias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

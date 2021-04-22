@@ -8,6 +8,7 @@ namespace PresentacionDatos
     public partial class frmCategoriasAdd : Form
     {
         ManejadorCategoria mc = new ManejadorCategoria();
+        ManejadorValidar mv = new ManejadorValidar();
 
         public frmCategoriasAdd()
         {
@@ -30,7 +31,8 @@ namespace PresentacionDatos
                 }
                 else
                 {
-                    MessageBox.Show("No se puede dejar el campo vacío", "¡ERROR!");
+                    Error1.SetError(txtCategoria, "Error, No se puede dejar el campo vacío");
+                    txtCategoria.Focus();
                 }
             }
             catch (Exception)

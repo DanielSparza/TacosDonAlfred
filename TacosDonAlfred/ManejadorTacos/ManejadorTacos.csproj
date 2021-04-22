@@ -44,6 +44,7 @@
     <Compile Include="ManejadorLogin.cs" />
     <Compile Include="ManejadorPlatillos.cs" />
     <Compile Include="ManejadorProveedor.cs" />
+    <Compile Include="ManejadorValidar.cs" />
     <Compile Include="ManejadorVentasDiarias.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>

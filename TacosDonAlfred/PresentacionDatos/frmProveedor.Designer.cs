@@ -66,7 +66,7 @@
             this.lblNombre.Location = new System.Drawing.Point(13, 65);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(70, 23);
+            this.lblNombre.Size = new System.Drawing.Size(88, 29);
             this.lblNombre.TabIndex = 47;
             this.lblNombre.Text = "Nombre";
             // 
@@ -77,7 +77,7 @@
             this.txtNombre.Location = new System.Drawing.Point(85, 60);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(453, 29);
+            this.txtNombre.Size = new System.Drawing.Size(453, 34);
             this.txtNombre.TabIndex = 0;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -161,6 +161,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgProveedores.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgProveedores.RowHeadersVisible = false;
+            this.dtgProveedores.RowHeadersWidth = 51;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
@@ -194,13 +195,13 @@
             this.Compras.Location = new System.Drawing.Point(12, 5);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(163, 29);
+            this.Compras.Size = new System.Drawing.Size(203, 35);
             this.Compras.TabIndex = 57;
             this.Compras.Text = "PROVEEDORES";
             // 
             // frmProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1112, 706);
@@ -215,6 +216,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

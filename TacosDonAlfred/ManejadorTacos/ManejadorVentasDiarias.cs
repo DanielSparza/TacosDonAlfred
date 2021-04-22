@@ -19,7 +19,7 @@ namespace ManejadorTacos
                 {
                     if(obtenerCantidadExistente(evd.FkIdProducto) >= evd.CantidadVendida)
                     {
-                        MessageBox.Show("Entro en ambos");
+                        
                         return cvd.GuardarVentasDiarias(evd);
                     }
                     else
