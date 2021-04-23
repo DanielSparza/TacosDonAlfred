@@ -124,9 +124,9 @@
             this.label2.Location = new System.Drawing.Point(15, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 29);
+            this.label2.Size = new System.Drawing.Size(76, 29);
             this.label2.TabIndex = 83;
-            this.label2.Text = "Precio";
+            this.label2.Text = "Total $";
             // 
             // Compras
             // 

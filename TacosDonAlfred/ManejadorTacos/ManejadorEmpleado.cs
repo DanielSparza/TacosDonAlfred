@@ -81,6 +81,17 @@ namespace ManejadorTacos
                 return "Error al Actualizar los Datos";
             }
         }
+        public string ActualizarempleadoC(EntidadEmpleados ee)
+        {
+            try
+            {
+                return ce.ActualizarEmpleadoC(ee);
+            }
+            catch (Exception)
+            {
+                return "Error al Actualizar los Datos";
+            }
+        }
         public DataSet Mostrar(string nombre)
         {
             return ce.Mostrar(nombre);

@@ -35,9 +35,9 @@ namespace AccesoADatos
         {
             return Mostrar(string.Format("select u.Nombre from Usuarios u, Proveedores p where u.IdUsuario = p.FkIdUsuario"), tabla);
         }
-        public DataSet Mostrar(string nombre)
+        public DataSet Mostrar(string Producto, string fi, string ff)
         {
-            return Mostrar(string.Format("select c.IdCompra,c.Fecha,c.Cantidad,c.Precio,p.NombreProducto as 'Producto', u.Nombre as 'Proveedor' from Compras c, Productos p, Usuarios u,Proveedores pr where c.FkIdProducto=p.IdProducto AND c.FkIdProveedor=pr.FkIdUsuario AND pr.FkIdUsuario=u.IdUsuario and  Fecha  like '%{0}%'", nombre), "Compras");
+            return Mostrar(string.Format("select c.IdCompra,c.Fecha,c.Cantidad,c.Precio as 'Total Compra',p.NombreProducto as 'Producto', u.Nombre as 'Proveedor' from Compras c, Productos p, Usuarios u,Proveedores pr where c.FkIdProducto=p.IdProducto AND c.FkIdProveedor=pr.FkIdUsuario AND pr.FkIdUsuario=u.IdUsuario and  p.NombreProducto like '%{0}%' and Fecha BETWEEN '{1}' AND '{2}' Order by c.IdCompra", Producto,fi,ff), "Compras");
         }
 
     }

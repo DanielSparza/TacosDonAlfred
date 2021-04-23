@@ -35,7 +35,7 @@ namespace AccesoADatos
 
         public DataSet MostrarTotalVentas(string fechaInicio, string fechaFin)
         {
-            return Mostrar(string.Format("SELECT SUM(d.Cantidad) * m.Precio AS 'Total' FROM DetallesVentas d, Menu m, Ventas v WHERE d.FkIdPlatillo = m.IdPlatillo AND d.FkIdVenta = v.IdVenta AND v.Fecha BETWEEN '{0}' AND '{1}' GROUP BY d.FkIdPlatillo;", fechaInicio, fechaFin), "detallesventas");
+            return Mostrar(string.Format("SELECT SUM(d.Cantidad * m.Precio) AS 'Total' FROM DetallesVentas d, Menu m, Ventas v WHERE d.FkIdPlatillo = m.IdPlatillo AND d.FkIdVenta = v.IdVenta AND v.Fecha BETWEEN '{0}' AND '{1}' GROUP BY d.FkIdPlatillo;", fechaInicio, fechaFin), "detallesventas");
         }
 
         public DataSet MostrarAlmacen(string nombre)

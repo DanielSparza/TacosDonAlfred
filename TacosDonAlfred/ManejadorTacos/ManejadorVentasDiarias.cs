@@ -53,9 +53,9 @@ namespace ManejadorTacos
             }
         }
 
-        public DataSet Mostrar(string nombre, string fecha)
+        public DataSet Mostrar(string nombre, string fecha, string fechafin)
         {
-            return cvd.Mostrar2(nombre, fecha); 
+            return cvd.Mostrar2(nombre, fecha,fechafin); 
         }
 
         public string obtenerId(string nombre)

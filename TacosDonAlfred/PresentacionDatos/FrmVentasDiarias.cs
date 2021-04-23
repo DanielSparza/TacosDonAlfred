@@ -21,7 +21,7 @@ namespace PresentacionDatos
 
         public void Actualizar()
         {
-            dtgVentasDiarias.DataSource = mvd.Mostrar(txtProducto.Text, dtpFechaFiltro.Text).Tables[0];
+            dtgVentasDiarias.DataSource = mvd.Mostrar(txtProducto.Text, dtpFechaFiltro.Text,dtpFechaFin.Text).Tables[0];
         }
 
         public void Nuevo()
@@ -123,6 +123,11 @@ namespace PresentacionDatos
         }
 
         private void dtpFechaFiltro_ValueChanged(object sender, EventArgs e)
+        {
+            Actualizar();
+        }
+
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
         {
             Actualizar();
         }

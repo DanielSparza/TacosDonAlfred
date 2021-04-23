@@ -43,11 +43,15 @@ namespace AccesoADatos
             return Comando(string.Format("update Usuarios set Nombre = '{0}', ApellidoPaterno = '{1}', ApellidoMaterno = '{2}', Telefono = '{3}', Direccion = '{4}' where IdUsuario = '{5}'",
                 eu.Nombre, eu.ApellidoPaterno, eu.ApellidoMaterno, eu.Telefono, eu.Domicilio, eu.idUsuario));
         }
+
         public string ActualizarEmpleado(EntidadEmpleados ee)
+        {
+            return Comando(string.Format("update Empleados set Puesto = '{0}', NombreUsuario = '{1}' where FkIdUsuario = '{2}'", ee.Puesto, ee.Usuario, ee.IdUsuario));
+        }
+        public string ActualizarEmpleadoC(EntidadEmpleados ee)
         {
             return Comando(string.Format("update Empleados set Puesto = '{0}', NombreUsuario = '{1}', Contraseña = md5('{2}') where FkIdUsuario = '{3}'", ee.Puesto, ee.Usuario, ee.Contraseña, ee.IdUsuario));
         }
-
         public DataSet Mostrar(string nombre)
         {
             return Mostrar(string.Format("select u.*, e.Puesto, e.NombreUsuario from Usuarios u, Empleados e where u.IdUsuario = e.FkIdUsuario and u.Nombre like '%{0}%'", nombre), "empleados");

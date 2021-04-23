@@ -83,9 +83,9 @@ namespace ManejadorTacos
             return int.Parse(r["IdProducto"].ToString());
         }
 
-        public DataSet Mostrar(string nombre)
+        public DataSet Mostrar(string producto, string fi, string ff)
         {
-            return mc.Mostrar(nombre);
+            return mc.Mostrar(producto,fi,ff);
         }
     }
 }

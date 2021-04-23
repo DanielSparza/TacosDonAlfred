@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVentasDiarias));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtgVentasDiarias = new System.Windows.Forms.DataGridView();
@@ -42,6 +42,8 @@
             this.dtpFechaFiltro = new System.Windows.Forms.DateTimePicker();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.Compras = new System.Windows.Forms.Label();
+            this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentasDiarias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtbRegresar)).BeginInit();
@@ -53,7 +55,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1075, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(1303, 42);
             this.pictureBox1.TabIndex = 63;
             this.pictureBox1.TabStop = false;
             // 
@@ -65,37 +67,37 @@
             this.dtgVentasDiarias.BackgroundColor = System.Drawing.Color.LightSlateGray;
             this.dtgVentasDiarias.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgVentasDiarias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgVentasDiarias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgVentasDiarias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgVentasDiarias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgVentasDiarias.EnableHeadersVisualStyles = false;
             this.dtgVentasDiarias.GridColor = System.Drawing.Color.White;
             this.dtgVentasDiarias.Location = new System.Drawing.Point(9, 124);
             this.dtgVentasDiarias.Name = "dtgVentasDiarias";
             this.dtgVentasDiarias.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgVentasDiarias.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgVentasDiarias.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgVentasDiarias.RowHeadersVisible = false;
             this.dtgVentasDiarias.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dtgVentasDiarias.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dtgVentasDiarias.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgVentasDiarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgVentasDiarias.Size = new System.Drawing.Size(1054, 526);
+            this.dtgVentasDiarias.Size = new System.Drawing.Size(1282, 526);
             this.dtgVentasDiarias.TabIndex = 4;
             this.dtgVentasDiarias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgVentasDiarias_CellClick);
             // 
@@ -107,7 +109,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(943, 63);
+            this.btnEliminar.Location = new System.Drawing.Point(1171, 69);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(120, 40);
             this.btnEliminar.TabIndex = 3;
@@ -123,7 +125,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(807, 64);
+            this.btnNuevo.Location = new System.Drawing.Point(1035, 70);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(120, 40);
             this.btnNuevo.TabIndex = 2;
@@ -148,7 +150,7 @@
             this.PtbRegresar.BackColor = System.Drawing.Color.Teal;
             this.PtbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("PtbRegresar.Image")));
-            this.PtbRegresar.Location = new System.Drawing.Point(1031, 6);
+            this.PtbRegresar.Location = new System.Drawing.Point(1259, 5);
             this.PtbRegresar.Name = "PtbRegresar";
             this.PtbRegresar.Size = new System.Drawing.Size(32, 32);
             this.PtbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,18 +164,18 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(477, 74);
+            this.label2.Location = new System.Drawing.Point(396, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 29);
+            this.label2.Size = new System.Drawing.Size(82, 58);
             this.label2.TabIndex = 74;
-            this.label2.Text = "Fecha";
+            this.label2.Text = "Fecha\r\nInicio";
             // 
             // dtpFechaFiltro
             // 
             this.dtpFechaFiltro.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaFiltro.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaFiltro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaFiltro.Location = new System.Drawing.Point(551, 70);
+            this.dtpFechaFiltro.Location = new System.Drawing.Point(474, 70);
             this.dtpFechaFiltro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaFiltro.Name = "dtpFechaFiltro";
             this.dtpFechaFiltro.Size = new System.Drawing.Size(217, 34);
@@ -186,7 +188,7 @@
             this.txtProducto.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProducto.Location = new System.Drawing.Point(113, 70);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(349, 34);
+            this.txtProducto.Size = new System.Drawing.Size(273, 34);
             this.txtProducto.TabIndex = 0;
             this.txtProducto.TextChanged += new System.EventHandler(this.txtProducto_TextChanged);
             // 
@@ -203,13 +205,39 @@
             this.Compras.TabIndex = 77;
             this.Compras.Text = "VENTAS DIARIAS";
             // 
+            // dtpFechaFin
+            // 
+            this.dtpFechaFin.CustomFormat = "yyyy-MM-dd";
+            this.dtpFechaFin.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaFin.Location = new System.Drawing.Point(811, 70);
+            this.dtpFechaFin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpFechaFin.Name = "dtpFechaFin";
+            this.dtpFechaFin.Size = new System.Drawing.Size(217, 34);
+            this.dtpFechaFin.TabIndex = 78;
+            this.dtpFechaFin.ValueChanged += new System.EventHandler(this.dtpFechaFin_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(722, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 58);
+            this.label1.TabIndex = 79;
+            this.label1.Text = "Fecha\r\nFin";
+            // 
             // FrmVentasDiarias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1075, 662);
+            this.ClientSize = new System.Drawing.Size(1303, 662);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dtpFechaFin);
             this.Controls.Add(this.Compras);
             this.Controls.Add(this.txtProducto);
             this.Controls.Add(this.dtpFechaFiltro);
@@ -247,5 +275,7 @@
         private System.Windows.Forms.DateTimePicker dtpFechaFiltro;
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.Label Compras;
+        private System.Windows.Forms.DateTimePicker dtpFechaFin;
+        private System.Windows.Forms.Label label1;
     }
 }

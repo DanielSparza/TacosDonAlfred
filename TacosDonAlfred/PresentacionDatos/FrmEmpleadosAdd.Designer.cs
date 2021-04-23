@@ -51,8 +51,12 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.Compras = new System.Windows.Forms.Label();
             this.Error1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnContraseña = new System.Windows.Forms.PictureBox();
+            this.btnEditar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Error1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnContraseña)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -261,7 +265,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(208, 349);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(376, 34);
+            this.txtContraseña.Size = new System.Drawing.Size(292, 34);
             this.txtContraseña.TabIndex = 7;
             // 
             // Compras
@@ -282,6 +286,27 @@
             this.Error1.ContainerControl = this;
             this.Error1.Icon = ((System.Drawing.Icon)(resources.GetObject("Error1.Icon")));
             // 
+            // btnContraseña
+            // 
+            this.btnContraseña.Location = new System.Drawing.Point(506, 349);
+            this.btnContraseña.Name = "btnContraseña";
+            this.btnContraseña.Size = new System.Drawing.Size(32, 32);
+            this.btnContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnContraseña.TabIndex = 84;
+            this.btnContraseña.TabStop = false;
+            this.btnContraseña.Click += new System.EventHandler(this.btnContraseña_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Location = new System.Drawing.Point(552, 349);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(32, 32);
+            this.btnEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnEditar.TabIndex = 85;
+            this.btnEditar.TabStop = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // FrmEmpleadosAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
@@ -289,6 +314,8 @@
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(649, 463);
             this.ControlBox = false;
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnContraseña);
             this.Controls.Add(this.Compras);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label7);
@@ -320,6 +347,8 @@
             this.Text = "FrmEmpleadosAdd";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Error1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnContraseña)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,5 +377,7 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label Compras;
         private System.Windows.Forms.ErrorProvider Error1;
+        private System.Windows.Forms.PictureBox btnContraseña;
+        private System.Windows.Forms.PictureBox btnEditar;
     }
 }

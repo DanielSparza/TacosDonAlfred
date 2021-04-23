@@ -33,9 +33,9 @@ namespace AccesoADatos
                 evd.FkIdProducto, evd.Fecha));
         }
 
-        public DataSet Mostrar2(string nombre, string fecha)
+        public DataSet Mostrar2(string nombre, string fecha, string fechafin)
         {
-            return Mostrar(string.Format("select v.Fecha, p.NombreProducto as 'Producto', v.CantidadVendida as 'Cantidad Vendida', p.Medida as 'Unidad' from VentasDiarias v, Productos p where p.IdProducto = v.FkIdProducto and p.NombreProducto like '%{0}%' and v.Fecha like '%{1}%'", nombre, fecha), "VentasDiarias");
+            return Mostrar(string.Format("select v.Fecha, p.NombreProducto as 'Producto', v.CantidadVendida as 'Cantidad Vendida', p.Medida as 'Unidad' from VentasDiarias v, Productos p where p.IdProducto = v.FkIdProducto and p.NombreProducto like '%{0}%' and v.Fecha BETWEEN '{1}' AND '{2}'", nombre, fecha,fechafin), "VentasDiarias");
         }
 
         public DataSet mostrarProductos()

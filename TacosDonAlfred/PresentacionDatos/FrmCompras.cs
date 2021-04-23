@@ -22,13 +22,13 @@ namespace PresentacionDatos
 
         private void FrmCompras_Load(object sender, EventArgs e)
         {
-            Actualizar("");
+            Actualizar("","","");
         }
 
-        void Actualizar(string buscar)
+        void Actualizar(string producto, string fi, string ff)
         {
             
-            Compritas.DataSource = mc.Mostrar(buscar).Tables[0];
+            Compritas.DataSource = mc.Mostrar(producto,fi,ff).Tables[0];
 
 
         }
@@ -42,7 +42,7 @@ namespace PresentacionDatos
         {
             FrmComprasADD fc = new FrmComprasADD(entidadCompras, proveedor, producto);
             fc.ShowDialog();
-            Actualizar("");
+            Actualizar("","","");
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -52,20 +52,20 @@ namespace PresentacionDatos
             if (rs == DialogResult.Yes)
             {
                 r = mc.EliminarCompra(entidadCompras);
-                Actualizar("");
+                Actualizar("","","");
             }
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            Actualizar(txtBuscar.Text);
+            Actualizar(txtBuscar.Text,dtpFechaInicio.Text,dtpFechaFin.Text);
         }
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
             FrmComprasADD fp = new FrmComprasADD();
             fp.ShowDialog();
-            Actualizar("");
+            Actualizar("","","");
         }
 
         private void Compritas_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -84,6 +84,16 @@ namespace PresentacionDatos
             {
 
             }
+        }
+
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            Actualizar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text);
+        }
+
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
+        {
+            Actualizar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text);
         }
     }
 }

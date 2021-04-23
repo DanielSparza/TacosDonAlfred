@@ -16,6 +16,9 @@ namespace PresentacionDatos
     {
         int index;
         int id = 0;
+        bool c = false;
+        bool a = false;
+        bool x = false;
         ManejadorEmpleado me = new ManejadorEmpleado();
         EntidadEmpleados enu = new EntidadEmpleados(0, "", "", "");
         EntidadUsuarios eus = new EntidadUsuarios("", "", "", "", "", "");
@@ -25,6 +28,8 @@ namespace PresentacionDatos
         {
             InitializeComponent();
             LlenarCombo();
+            btnContraseña.ImageLocation = "Contraseña/ocultar.png";
+            btnEditar.Enabled = false;
         }
 
         public FrmEmpleadosAdd(EntidadEmpleados eu, EntidadUsuarios u)
@@ -43,6 +48,9 @@ namespace PresentacionDatos
             LlenarCombo();
             index = cmbPuesto.FindString(eu.Puesto);
             cmbPuesto.SelectedIndex = index;
+            btnContraseña.ImageLocation = "Contraseña/ocultar.png";
+            txtContraseña.Enabled = false;
+            btnContraseña.Enabled = false;
         }
 
         public void LlenarCombo()
@@ -62,10 +70,18 @@ namespace PresentacionDatos
                 if (mv.validarVacio(txtNombre) && mv.validarVacio(txtApellidoP) && mv.validarVacio(txtApellidoM) && mv.validarVacio(txtDireccion) && mv.validarNumeros(txtTelefono.Text) && mv.validarVacio(txtUsuario) && mv.validarVacio(txtContraseña) && mv.validarVacio(cmbPuesto.Text))
                 {
                     if (id > 0)
-                    {
-                        string r = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
-                        r = me.Actualizarusuario(new EntidadUsuarios(id.ToString(), txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
+                    { 
+                        if (x == true)
+                        {
+                            string p = me.ActualizarempleadoC(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
+                        }
+                        else
+                        {
+                            string s = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
+                        }
+                        string r = me.Actualizarusuario(new EntidadUsuarios(id.ToString(), txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));
                         Close();
+
                     }
                     else
                     {
@@ -100,6 +116,44 @@ namespace PresentacionDatos
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnContraseña_Click(object sender, EventArgs e)
+        {
+            if (c == false)
+            {
+                btnContraseña.ImageLocation = "Contraseña/mostrar.png";
+                txtContraseña.PasswordChar = '\0';
+                c = true;
+            }
+            else
+            {
+                btnContraseña.ImageLocation = "Contraseña/ocultar.png";
+                txtContraseña.PasswordChar = '*';
+                c = false;
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (a == false)
+            {
+                txtContraseña.Enabled = true;
+                btnContraseña.Enabled = true;
+                txtContraseña.Clear();
+                a = true;
+                x = true;
+            }
+            else
+            {
+                txtContraseña.Enabled = false;
+                btnContraseña.Enabled = false;
+                txtContraseña.PasswordChar = '*';
+                btnContraseña.ImageLocation = "Contraseña/ocultar.png";
+                txtContraseña.Text = "123";
+                a = false;
+                x = false;
+            }
         }
     }
 }
