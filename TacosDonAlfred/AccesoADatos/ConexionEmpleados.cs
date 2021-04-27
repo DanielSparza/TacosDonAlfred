@@ -2,6 +2,10 @@
 using Bases;
 using System.Data;
 using System;
+using System.Security.Cryptography;
+using System.Text;
+using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace AccesoADatos
 {
@@ -26,6 +30,7 @@ namespace AccesoADatos
         }
         public string GuardarEmpleado(EntidadEmpleados ee)
         {
+            string r = Comando(string.Format("insert into users values(null,'{0}','{1}@tacos.com',null,'{2}',null,null,null)", ee.Usuario, ee.Usuario, BCrypt.Net.BCrypt.HashPassword(ee.Contraseña,10)));
             return Comando(string.Format("insert into Empleados values('{0}','{1}', '{2}', md5('{3}'))", ee.IdUsuario, ee.Puesto, ee.Usuario, ee.Contraseña));
         }
 
@@ -59,6 +64,35 @@ namespace AccesoADatos
         public DataSet MostrarId(string nombre)
         {
             return Mostrar(string.Format("select u.IdUsuario from Usuarios u where u.Nombre = '{0}'", nombre), "usuarios");
+        }
+        public static string EncodePassword(string originalPassword)
+        {
+            UTF8Encoding enc = new UTF8Encoding();
+            byte[] data = enc.GetBytes(originalPassword);
+            byte[] result;
+
+            SHA1CryptoServiceProvider sha = new SHA1CryptoServiceProvider();
+
+            result = sha.ComputeHash(data);
+
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < result.Length; i++)
+            {
+
+                // Convertimos los valores en hexadecimal
+                // cuando tiene una cifra hay que rellenarlo con cero
+                // para que siempre ocupen dos dígitos.
+                if (result[i] < 16)
+                {
+                    sb.Append("0");
+                }
+                sb.Append(result[i].ToString("x"));
+            }
+
+            //Devolvemos la cadena con el hash en mayúsculas para que quede más chuli :)
+            return sb.ToString().ToUpper();
+
         }
     }
 }
