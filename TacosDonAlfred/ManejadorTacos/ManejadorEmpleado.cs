@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AccesoADatos;
 using Entidades;
+using System.Windows.Forms;
 
 namespace ManejadorTacos
 {
@@ -74,6 +75,7 @@ namespace ManejadorTacos
         {
             try
             {
+                MessageBox.Show(ce.obtenerId(ee.Usuario).ToString());
                 return ce.ActualizarEmpleado(ee);
             }
             catch (Exception)
@@ -99,12 +101,10 @@ namespace ManejadorTacos
 
         public string obtenerId(string nombre)
         {
-
             DataTable dt = new DataTable();
             dt = ce.MostrarId(nombre).Tables[0];
             DataRow r = dt.Rows[0];
             return r["IdUsuario"].ToString();
-
         }
     }
 }

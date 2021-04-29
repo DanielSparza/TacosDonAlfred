@@ -18,6 +18,7 @@ namespace PresentacionDatos
             frmLogin l = new frmLogin();
             l.Show();
             Hide();
+            v = 0;
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -39,11 +40,10 @@ namespace PresentacionDatos
             btnProveedores.Checked = true;
             if (v == 0)
             {
+                v++;
                 frmProveedor p = new frmProveedor();
                 p.MdiParent = this;
-                p.Show();
-                v++;
-            }
+                p.Show();            }
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
@@ -52,10 +52,10 @@ namespace PresentacionDatos
             btnInventario.Checked = true;
             if (v == 0)
             {
+                v++;
                 FrmInventario f = new FrmInventario();
                 f.MdiParent = this;
                 f.Show();
-                v++;
             }
         }
 
@@ -65,10 +65,10 @@ namespace PresentacionDatos
             btnEmpleados.Checked = true;
             if (v == 0)
             {
+                v++;
                 FrmEmpleados em = new FrmEmpleados();
                 em.MdiParent = this;
                 em.Show();
-                v++;
             }
         }
 
@@ -78,10 +78,10 @@ namespace PresentacionDatos
             btnCompras.Checked = true;
             if (v == 0)
             {
+                v++;
                 FrmCompras em = new FrmCompras();
                 em.MdiParent = this;
                 em.Show();
-                v++;
             }
         }
 
@@ -91,10 +91,10 @@ namespace PresentacionDatos
             tsbPlatillos.Checked = true;
             if (v == 0)
             {
+                v++;
                 FrmPlatillos fp = new FrmPlatillos();
                 fp.MdiParent = this;
                 fp.Show();
-                v++;
             }
         }
 
@@ -104,10 +104,10 @@ namespace PresentacionDatos
             tsbVentasDiarias.Checked = true;
             if (v == 0)
             {
+                v++;
                 FrmVentasDiarias fvd = new FrmVentasDiarias();
                 fvd.MdiParent = this;
                 fvd.Show();
-                v++;
             }
         }
 
@@ -117,10 +117,10 @@ namespace PresentacionDatos
             tsbEstadisticas.Checked = true;
             if (v == 0)
             {
+                v++;
                 FrmEstadisticas fe = new FrmEstadisticas();
                 fe.MdiParent = this;
                 fe.Show();
-                v++;
             }
         }
 

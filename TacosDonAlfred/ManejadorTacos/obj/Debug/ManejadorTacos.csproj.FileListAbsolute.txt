@@ -226,3 +226,34 @@ C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\Nueva carpeta\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Buffers.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\ManejadorTacos.exe.config
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\ManejadorTacos.exe
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\ManejadorTacos.pdb
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\AccesoADatos.exe
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.exe
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Bases.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\MySql.Data.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\BCrypt.Net-Next.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Google.Protobuf.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Ubiety.Dns.Core.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Renci.SshNet.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Memory.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Numerics.Vectors.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Buffers.dll
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\AccesoADatos.pdb
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\AccesoADatos.exe.config
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.pdb
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\EntidadesTacos.exe.config
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\Bases.pdb
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\MySql.Data.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\BCrypt.Net-Next.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Memory.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Numerics.Vectors.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\bin\Debug\System.Buffers.xml
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csprojAssemblyReference.cache
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CoreCompileInputs.cache
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.csproj.CopyComplete
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.exe
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\ManejadorTacos\obj\Debug\ManejadorTacos.pdb

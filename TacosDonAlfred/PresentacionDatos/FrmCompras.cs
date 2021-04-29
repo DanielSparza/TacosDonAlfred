@@ -95,5 +95,11 @@ namespace PresentacionDatos
         {
             Actualizar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text);
         }
+
+        private void pbRegresar_Click(object sender, EventArgs e)
+        {
+            Close();
+            frmPrincipal.v = 0;
+        }
     }
 }

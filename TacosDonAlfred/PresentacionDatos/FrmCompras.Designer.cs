@@ -45,9 +45,11 @@
             this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbRegresar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtbRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Compritas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnagregar
@@ -58,7 +60,7 @@
             this.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagregar.ForeColor = System.Drawing.Color.White;
-            this.btnagregar.Location = new System.Drawing.Point(983, 65);
+            this.btnagregar.Location = new System.Drawing.Point(808, 65);
             this.btnagregar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(150, 35);
@@ -75,7 +77,7 @@
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btneliminar.ForeColor = System.Drawing.Color.White;
-            this.btneliminar.Location = new System.Drawing.Point(1307, 65);
+            this.btneliminar.Location = new System.Drawing.Point(1132, 65);
             this.btneliminar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(150, 35);
@@ -93,7 +95,7 @@
             this.label10.Location = new System.Drawing.Point(10, 67);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 29);
+            this.label10.Size = new System.Drawing.Size(84, 23);
             this.label10.TabIndex = 54;
             this.label10.Text = " Producto";
             // 
@@ -105,7 +107,7 @@
             this.btnmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmodificar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmodificar.ForeColor = System.Drawing.Color.White;
-            this.btnmodificar.Location = new System.Drawing.Point(1145, 65);
+            this.btnmodificar.Location = new System.Drawing.Point(970, 65);
             this.btnmodificar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(150, 35);
@@ -119,7 +121,7 @@
             this.txtBuscar.Location = new System.Drawing.Point(111, 66);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(221, 34);
+            this.txtBuscar.Size = new System.Drawing.Size(221, 29);
             this.txtBuscar.TabIndex = 0;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -132,7 +134,7 @@
             this.Compras.Location = new System.Drawing.Point(15, 5);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(141, 35);
+            this.Compras.Size = new System.Drawing.Size(112, 29);
             this.Compras.TabIndex = 50;
             this.Compras.Text = "COMPRAS";
             // 
@@ -143,7 +145,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1468, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(1302, 40);
             this.pictureBox1.TabIndex = 49;
             this.pictureBox1.TabStop = false;
             // 
@@ -180,7 +182,7 @@
             this.Compritas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Compritas.EnableHeadersVisualStyles = false;
             this.Compritas.GridColor = System.Drawing.Color.White;
-            this.Compritas.Location = new System.Drawing.Point(15, 123);
+            this.Compritas.Location = new System.Drawing.Point(20, 123);
             this.Compritas.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Compritas.Name = "Compritas";
             this.Compritas.ReadOnly = true;
@@ -200,7 +202,7 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Teal;
             this.Compritas.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.Compritas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Compritas.Size = new System.Drawing.Size(1438, 553);
+            this.Compritas.Size = new System.Drawing.Size(1262, 553);
             this.Compritas.TabIndex = 4;
             this.Compritas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Compritas_CellClick);
             // 
@@ -212,7 +214,7 @@
             this.dtpFechaInicio.Location = new System.Drawing.Point(424, 66);
             this.dtpFechaInicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(205, 34);
+            this.dtpFechaInicio.Size = new System.Drawing.Size(133, 29);
             this.dtpFechaInicio.TabIndex = 58;
             this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dtpFechaInicio_ValueChanged);
             // 
@@ -221,10 +223,10 @@
             this.dtpFechaFin.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaFin.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaFin.Location = new System.Drawing.Point(756, 68);
+            this.dtpFechaFin.Location = new System.Drawing.Point(659, 68);
             this.dtpFechaFin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaFin.Name = "dtpFechaFin";
-            this.dtpFechaFin.Size = new System.Drawing.Size(204, 34);
+            this.dtpFechaFin.Size = new System.Drawing.Size(133, 29);
             this.dtpFechaFin.TabIndex = 59;
             this.dtpFechaFin.ValueChanged += new System.EventHandler(this.dtpFechaFin_ValueChanged);
             // 
@@ -237,7 +239,7 @@
             this.label1.Location = new System.Drawing.Point(344, 55);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 58);
+            this.label1.Size = new System.Drawing.Size(57, 46);
             this.label1.TabIndex = 60;
             this.label1.Text = "Fecha\r\nInicio";
             // 
@@ -247,21 +249,35 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(676, 55);
+            this.label2.Location = new System.Drawing.Point(579, 55);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 58);
+            this.label2.Size = new System.Drawing.Size(57, 46);
             this.label2.TabIndex = 61;
             this.label2.Text = "Fecha\r\nFin";
+            // 
+            // pbRegresar
+            // 
+            this.pbRegresar.BackColor = System.Drawing.Color.Teal;
+            this.pbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("pbRegresar.Image")));
+            this.pbRegresar.Location = new System.Drawing.Point(1250, 3);
+            this.pbRegresar.Name = "pbRegresar";
+            this.pbRegresar.Size = new System.Drawing.Size(32, 32);
+            this.pbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRegresar.TabIndex = 62;
+            this.pbRegresar.TabStop = false;
+            this.pbRegresar.Click += new System.EventHandler(this.pbRegresar_Click);
             // 
             // FrmCompras
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1468, 692);
+            this.ClientSize = new System.Drawing.Size(1302, 692);
             this.ControlBox = false;
+            this.Controls.Add(this.pbRegresar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpFechaFin);
@@ -288,6 +304,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtbRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Compritas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,5 +325,6 @@
         private System.Windows.Forms.DateTimePicker dtpFechaFin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbRegresar;
     }
 }

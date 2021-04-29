@@ -62,7 +62,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Teal;
-            this.btnCancelar.Location = new System.Drawing.Point(97, 206);
+            this.btnCancelar.Location = new System.Drawing.Point(126, 206);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(150, 40);
             this.btnCancelar.TabIndex = 4;
@@ -77,7 +77,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Teal;
-            this.btnGuardar.Location = new System.Drawing.Point(353, 206);
+            this.btnGuardar.Location = new System.Drawing.Point(378, 206);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 40);
             this.btnGuardar.TabIndex = 3;
@@ -91,7 +91,7 @@
             this.cmbProducto.FormattingEnabled = true;
             this.cmbProducto.Location = new System.Drawing.Point(211, 104);
             this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(376, 34);
+            this.cmbProducto.Size = new System.Drawing.Size(376, 29);
             this.cmbProducto.TabIndex = 1;
             // 
             // label3
@@ -102,7 +102,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(16, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 27);
+            this.label3.Size = new System.Drawing.Size(85, 22);
             this.label3.TabIndex = 77;
             this.label3.Text = "Cantidad";
             // 
@@ -112,7 +112,7 @@
             this.txtCantidad.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(211, 144);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(376, 34);
+            this.txtCantidad.Size = new System.Drawing.Size(376, 29);
             this.txtCantidad.TabIndex = 2;
             // 
             // label2
@@ -123,7 +123,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(16, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 27);
+            this.label2.Size = new System.Drawing.Size(87, 22);
             this.label2.TabIndex = 76;
             this.label2.Text = "Producto";
             // 
@@ -135,7 +135,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(16, 67);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 27);
+            this.label11.Size = new System.Drawing.Size(63, 22);
             this.label11.TabIndex = 75;
             this.label11.Text = "Fecha";
             // 
@@ -148,9 +148,9 @@
             this.dtpFechaVenta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaVenta.MinDate = new System.DateTime(2021, 4, 13, 19, 25, 14, 0);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
-            this.dtpFechaVenta.Size = new System.Drawing.Size(376, 34);
+            this.dtpFechaVenta.Size = new System.Drawing.Size(376, 29);
             this.dtpFechaVenta.TabIndex = 0;
-            this.dtpFechaVenta.Value = new System.DateTime(2021, 4, 19, 0, 0, 0, 0);
+            this.dtpFechaVenta.Value = new System.DateTime(2021, 4, 28, 9, 5, 55, 0);
             // 
             // Compras
             // 
@@ -161,7 +161,7 @@
             this.Compras.Location = new System.Drawing.Point(15, 9);
             this.Compras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Compras.Name = "Compras";
-            this.Compras.Size = new System.Drawing.Size(280, 29);
+            this.Compras.Size = new System.Drawing.Size(220, 23);
             this.Compras.TabIndex = 89;
             this.Compras.Text = "GUARDAR VENTAS DIARIAS";
             // 
@@ -172,7 +172,7 @@
             // 
             // FrmVentasDiariasAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(659, 266);
