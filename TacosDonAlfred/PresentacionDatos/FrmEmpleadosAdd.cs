@@ -30,6 +30,7 @@ namespace PresentacionDatos
             LlenarCombo();
             btnContraseña.ImageLocation = "Contraseña/ocultar.png";
             btnEditar.Enabled = false;
+            id = 0;
         }
 
         public FrmEmpleadosAdd(EntidadEmpleados eu, EntidadUsuarios u)
@@ -73,10 +74,12 @@ namespace PresentacionDatos
                     { 
                         if (x == true)
                         {
+                            
                             string p = me.ActualizarempleadoC(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
                         }
                         else
                         {
+                            
                             string s = me.Actualizarempleado(new EntidadEmpleados(id, cmbPuesto.Text, txtUsuario.Text, txtContraseña.Text));
                         }
                         string r = me.Actualizarusuario(new EntidadUsuarios(id.ToString(), txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtTelefono.Text, txtDireccion.Text));

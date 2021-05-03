@@ -4,7 +4,7 @@ create table Categorias(IdCategoria int primary key auto_increment,
 NombreCategoria varchar(100));
 
 create table Productos(IdProducto int primary key auto_increment,
-NombreProducto varchar(100), Descripcion varchar(100), FkIdCategoria int,
+NombreProducto varchar(100), Descripcion varchar(100),Medida varchar(50) ,FkIdCategoria int,
 foreign key(FkIdCategoria) references Categorias(IdCategoria));
 
 create table Usuarios(IdUsuario int primary key auto_increment,
@@ -24,19 +24,35 @@ foreign key(FkIdProveedor) references Proveedores(FkIdUsuario),
 foreign key(FkIdProducto) references Productos(IdProducto));
 
 create table Ventas(IdVenta int primary key AUTO_INCREMENT,
-Fecha date, Mesa int, Estatus enum('En Proceso','Entregado','Cancelado'),FkIdEmpleado int,
+Fecha date, Mesa varchar(20), Estatus enum('En Proceso','Entregado','Cancelado'),FkIdEmpleado int,
 foreign key(FkIdEmpleado) references Empleados(FkIdUsuario));
 
-create table Menu(IdPlatillo int primary key auto_increment,
+create table menus(IdPlatillo int primary key auto_increment,
 Nombre varchar(100), Descripcion varchar(100), Precio double,Imagen varchar(200));
 
 create table DetallesVentas(FkIdVenta int, FkIdPlatillo int,
-Cantidad double, primary key(FkIdVenta,FkIdPlatillo),
+Cantidad double,Comentarios varchar(100),Precio double, primary key(FkIdVenta,FkIdPlatillo),
 foreign key(FkIdVenta) references Ventas(IdVenta),
-foreign key(FkIdPlatillo) references Menu(IdPlatillo));
+foreign key(FkIdPlatillo) references menus(IdPlatillo));
 
 create table Almacen(FkIdproducto int primary key, CantidadExistente double,
 foreign key(FkIdproducto) references Productos(IdProducto));
 
 create table VentasDiarias(Fecha date,FkIdProducto int, CantidadVendida double,
 primary key(Fecha,FkIdProducto), foreign key(FkIdProducto) references Productos(IdProducto));
+
+CREATE TABLE `users` (
+	`id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`email` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`email_verified_at` TIMESTAMP NULL DEFAULT NULL,
+	`password` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`remember_token` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`created_at` TIMESTAMP NULL DEFAULT NULL,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX `users_email_unique` (`email`)
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB
+;

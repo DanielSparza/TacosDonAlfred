@@ -68,7 +68,6 @@ C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfre
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Bases.dll
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\MySql.Data.dll
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Google.Protobuf.dll
-C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Renci.SshNet.dll
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\EntidadesTacos.pdb
@@ -458,3 +457,29 @@ S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-do
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.csproj.CopyComplete
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.exe
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.pdb
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Memory.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Buffers.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Memory.xml
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\System.Buffers.xml
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.csproj.ResolveComReference.cache
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmCategorias.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmCategoriasAdd.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmCompras.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmComprasADD.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmEstadisticas.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmLogin.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmPlatillos.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmPlatillosAdd.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmPrincipal.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmVentasDiarias.resources
+C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmVentasDiariasAdd.resources

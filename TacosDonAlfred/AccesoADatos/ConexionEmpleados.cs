@@ -1,6 +1,7 @@
 ﻿using Entidades;
 using Bases;
 using System.Data;
+using System.Windows.Forms;
 using System;
 using System.Security.Cryptography;
 using System.Text;
@@ -40,7 +41,7 @@ namespace AccesoADatos
         }
         public string EliminarEmpleado(EntidadEmpleados ee)
         {
-            string r = Comando(string.Format("delete from users where id = {0}", obtenerId(ee.Usuario)));
+            string r = Comando(string.Format("delete from users where id = {0}", ee.IdUsuario));
             return Comando(string.Format("delete from Empleados where FkIdUsuario = '{0}'", ee.IdUsuario));
         }
 
@@ -52,12 +53,13 @@ namespace AccesoADatos
 
         public string ActualizarEmpleado(EntidadEmpleados ee)
         {
-            string r = Comando(string.Format("update users set name = '{0}', email = '{1}' where id = {2}",ee.Usuario, ee.Usuario + "@tacos.com", obtenerId(ee.Usuario)));
+            MessageBox.Show(obtenerId(ee.Usuario).ToString());
+            string r = Comando(string.Format("update users set name = '{0}', email = '{0}@tacos.com' where id = '{1}'",ee.Usuario, ee.IdUsuario));
             return Comando(string.Format("update Empleados set Puesto = '{0}', NombreUsuario = '{1}' where FkIdUsuario = '{2}'", ee.Puesto, ee.Usuario, ee.IdUsuario));
         }
         public string ActualizarEmpleadoC(EntidadEmpleados ee)
         {
-            string r = Comando(string.Format("update users set name = '{0}', email = '{1}', password = '{2}' where id = {3}", ee.Usuario, ee.Usuario + "@tacos.com", BCrypt.Net.BCrypt.HashPassword(ee.Contraseña, 10), obtenerId(ee.Usuario)));
+            string r = Comando(string.Format("update users set name = '{0}', email = '{1}@tacos.com', password = '{2}' where id = {3}", ee.Usuario, ee.Usuario, BCrypt.Net.BCrypt.HashPassword(ee.Contraseña, 10), ee.IdUsuario));
             return Comando(string.Format("update Empleados set Puesto = '{0}', NombreUsuario = '{1}', Contraseña = md5('{2}') where FkIdUsuario = '{3}'", ee.Puesto, ee.Usuario, ee.Contraseña, ee.IdUsuario));
         }
         public DataSet Mostrar(string nombre)

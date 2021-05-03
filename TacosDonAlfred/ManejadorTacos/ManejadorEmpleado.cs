@@ -75,11 +75,12 @@ namespace ManejadorTacos
         {
             try
             {
-                MessageBox.Show(ce.obtenerId(ee.Usuario).ToString());
+               
                 return ce.ActualizarEmpleado(ee);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+               
                 return "Error al Actualizar los Datos";
             }
         }
