@@ -22,16 +22,14 @@ namespace PresentacionDatos
 
         private void FrmCompras_Load(object sender, EventArgs e)
         {
-            Actualizar("","","");
+            Actualizar();
         }
 
-        void Actualizar(string producto, string fi, string ff)
+        void Actualizar()
         {
-            
-            Compritas.DataSource = mc.Mostrar(producto,fi,ff).Tables[0];
-
-
+            Compritas.DataSource = mc.Mostrar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text).Tables[0];
         }
+
         private void PtbRegresar_Click(object sender, EventArgs e)
         {
             Close();
@@ -42,7 +40,7 @@ namespace PresentacionDatos
         {
             FrmComprasADD fc = new FrmComprasADD(entidadCompras, proveedor, producto);
             fc.ShowDialog();
-            Actualizar("","","");
+            Actualizar();
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -52,20 +50,20 @@ namespace PresentacionDatos
             if (rs == DialogResult.Yes)
             {
                 r = mc.EliminarCompra(entidadCompras);
-                Actualizar("","","");
+                Actualizar();
             }
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            Actualizar(txtBuscar.Text,dtpFechaInicio.Text,dtpFechaFin.Text);
+            Actualizar();
         }
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
             FrmComprasADD fp = new FrmComprasADD();
             fp.ShowDialog();
-            Actualizar("","","");
+            Actualizar();
         }
 
         private void Compritas_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -88,12 +86,12 @@ namespace PresentacionDatos
 
         private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
         {
-            Actualizar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text);
+            Actualizar();
         }
 
         private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
         {
-            Actualizar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text);
+            Actualizar();
         }
 
         private void pbRegresar_Click(object sender, EventArgs e)

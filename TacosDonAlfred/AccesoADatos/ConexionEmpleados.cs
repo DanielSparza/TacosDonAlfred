@@ -60,11 +60,11 @@ namespace AccesoADatos
         public string ActualizarEmpleadoC(EntidadEmpleados ee)
         {
             string r = Comando(string.Format("update users set name = '{0}', email = '{1}@tacos.com', password = '{2}' where id = {3}", ee.Usuario, ee.Usuario, BCrypt.Net.BCrypt.HashPassword(ee.Contraseña, 10), ee.IdUsuario));
-            return Comando(string.Format("update Empleados set Puesto = '{0}', NombreUsuario = '{1}', Contraseña = md5('{2}') where FkIdUsuario = '{3}'", ee.Puesto, ee.Usuario, ee.Contraseña, ee.IdUsuario));
+            return Comando(string.Format("update Empleados set Puesto = '{0}', NombreUsuario = '{1}', Contrasena = md5('{2}') where FkIdUsuario = '{3}'", ee.Puesto, ee.Usuario, ee.Contraseña, ee.IdUsuario));
         }
         public DataSet Mostrar(string nombre)
         {
-            return Mostrar(string.Format("select u.*, e.Puesto, e.NombreUsuario from Usuarios u, Empleados e where u.IdUsuario = e.FkIdUsuario and u.Nombre like '%{0}%'", nombre), "empleados");
+            return Mostrar(string.Format("select u.*, e.Puesto, e.NombreUsuario from Usuarios u, Empleados e where u.IdUsuario = e.FkIdUsuario and u.Nombre like '%{0}%' and u.IdUsuario > 1", nombre), "empleados");
         }
         public DataSet MostrarId(string nombre)
         {
