@@ -65,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 35);
+            this.label1.Size = new System.Drawing.Size(168, 29);
             this.label1.TabIndex = 48;
             this.label1.Text = "Nueva Categoría";
             // 
@@ -93,7 +93,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(12, 69);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 29);
+            this.label10.Size = new System.Drawing.Size(79, 23);
             this.label10.TabIndex = 46;
             this.label10.Text = "Nombre: ";
             // 
@@ -103,7 +103,7 @@
             this.txtCategoria.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCategoria.Location = new System.Drawing.Point(118, 66);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(340, 35);
+            this.txtCategoria.Size = new System.Drawing.Size(340, 29);
             this.txtCategoria.TabIndex = 0;
             // 
             // pictureBox1
@@ -112,7 +112,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(496, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(476, 40);
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
@@ -123,11 +123,11 @@
             // 
             // frmCategoriasAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(496, 170);
+            this.ClientSize = new System.Drawing.Size(476, 170);
             this.ControlBox = false;
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.label1);

@@ -26,7 +26,7 @@ namespace AccesoADatos
                 MySqlCommand c = new MySqlCommand();
                 MySqlConnection conectar = new MySqlConnection();
                 c.Connection = con;
-                c.CommandText = ("select * from Empleados where NombreUsuario = '" + usuario + "' and Contrasena = md5('" + contrasena + "') and Puesto = 'Administrador'");
+                c.CommandText = ("select * from empleados where NombreUsuario = '" + usuario + "' and Contrasena = md5('" + contrasena + "') and Puesto = 'Administrador'");
 
                 MySqlDataReader leer = c.ExecuteReader();
 

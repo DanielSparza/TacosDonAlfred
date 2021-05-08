@@ -34,15 +34,22 @@ namespace PresentacionDatos
 
         public void GenerarDatos(int fila)
         {
-            eu.idUsuario = dgvEmpleados.Rows[fila].Cells[0].Value.ToString();
-            eu.Nombre = dgvEmpleados.Rows[fila].Cells[1].Value.ToString();
-            eu.ApellidoPaterno = dgvEmpleados.Rows[fila].Cells[2].Value.ToString();
-            eu.ApellidoMaterno = dgvEmpleados.Rows[fila].Cells[3].Value.ToString();
-            eu.Telefono = dgvEmpleados.Rows[fila].Cells[4].Value.ToString();
-            eu.Domicilio = dgvEmpleados.Rows[fila].Cells[5].Value.ToString();
-            ee.Puesto = dgvEmpleados.Rows[fila].Cells[6].Value.ToString();
-            ee.Usuario = dgvEmpleados.Rows[fila].Cells[7].Value.ToString();
-            ee.IdUsuario = int.Parse(dgvEmpleados.Rows[fila].Cells[0].Value.ToString());
+            try
+            {
+                eu.idUsuario = dgvEmpleados.Rows[fila].Cells[0].Value.ToString();
+                eu.Nombre = dgvEmpleados.Rows[fila].Cells[1].Value.ToString();
+                eu.ApellidoPaterno = dgvEmpleados.Rows[fila].Cells[2].Value.ToString();
+                eu.ApellidoMaterno = dgvEmpleados.Rows[fila].Cells[3].Value.ToString();
+                eu.Telefono = dgvEmpleados.Rows[fila].Cells[4].Value.ToString();
+                eu.Domicilio = dgvEmpleados.Rows[fila].Cells[5].Value.ToString();
+                ee.Puesto = dgvEmpleados.Rows[fila].Cells[6].Value.ToString();
+                ee.Usuario = dgvEmpleados.Rows[fila].Cells[7].Value.ToString();
+                ee.IdUsuario = int.Parse(dgvEmpleados.Rows[fila].Cells[0].Value.ToString());
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         public void ActualizarDatos()
@@ -54,12 +61,21 @@ namespace PresentacionDatos
 
         public void Eliminar()
         {
-            DialogResult rs = MessageBox.Show("!Atención Estas seguro de eliminar el usuario " + eu.Nombre + " " + eu.ApellidoPaterno + " " + eu.ApellidoMaterno, "!Atencion", MessageBoxButtons.YesNo);
-            if (rs == DialogResult.Yes)
+            if (ee.IdUsuario > 0)
             {
-                r = me.EliminarEmpleado(ee);
-                r = me.Eliminarusuario(eu);
-                Actualizar();
+                DialogResult rs = MessageBox.Show("¿Estas seguro de eliminar el usuario " + eu.Nombre + " " + eu.ApellidoPaterno + " " + eu.ApellidoMaterno + "?", "!Atención", MessageBoxButtons.YesNo);
+                if (rs == DialogResult.Yes)
+                {
+                    r = me.EliminarEmpleado(ee);
+                    r = me.Eliminarusuario(eu);
+                    ee.IdUsuario = 0;
+                    fila = 0;
+                    Actualizar();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila que no este vacia");
             }
         }
 
@@ -75,7 +91,14 @@ namespace PresentacionDatos
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            ActualizarDatos();
+            if (ee.IdUsuario > 0)
+            {
+                ActualizarDatos();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una fila que no este vacia");
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

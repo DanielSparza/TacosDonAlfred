@@ -38,19 +38,35 @@ namespace PresentacionDatos
 
         private void btnmodificar_Click(object sender, EventArgs e)
         {
-            FrmComprasADD fc = new FrmComprasADD(entidadCompras, proveedor, producto);
-            fc.ShowDialog();
-            Actualizar();
+            if (entidadCompras.IdCompra > 0)
+            {
+                FrmComprasADD fc = new FrmComprasADD(entidadCompras, proveedor, producto);
+                fc.ShowDialog();
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una fila que no este vacia");
+            }
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            DialogResult rs = MessageBox.Show("Eliminar esta compra" + entidadCompras.Fecha, "Seguro", MessageBoxButtons.YesNo);
-
-            if (rs == DialogResult.Yes)
+            if (entidadCompras.IdCompra > 0)
             {
-                r = mc.EliminarCompra(entidadCompras);
-                Actualizar();
+                DialogResult rs = MessageBox.Show("¿Esta seguro de eliminar la compra " + entidadCompras.IdCompra + " del dia " + entidadCompras.Fecha + "?", "¡ATENCIÓN!", MessageBoxButtons.YesNo);
+
+                if (rs == DialogResult.Yes)
+                {
+                    r = mc.EliminarCompra(entidadCompras);
+                    entidadCompras.IdCompra = 0;
+                    fila = 0;
+                    Actualizar();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila que no este vacia");
             }
         }
 
