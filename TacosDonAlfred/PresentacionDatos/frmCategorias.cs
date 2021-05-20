@@ -43,10 +43,18 @@ namespace PresentacionDatos
 
         void Actualizar()
         {
-            dgvCategorias.DataSource = mc.Listado(string.Format(
-                $"SELECT * FROM Categorias"), "Categorias").Tables[0];
-            dgvCategorias.AutoResizeColumns();
-            dgvCategorias.Columns[0].ReadOnly = true;
+            try
+            {
+                dgvCategorias.DataSource = mc.Listado(string.Format(
+               $"SELECT * FROM Categorias"), "Categorias").Tables[0];
+                dgvCategorias.AutoResizeColumns();
+                dgvCategorias.Columns[0].ReadOnly = true;
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void frmCategorias_Load(object sender, EventArgs e)
@@ -66,7 +74,12 @@ namespace PresentacionDatos
             {
 
             }
-            
+
+        }
+
+        private void dgvCategorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

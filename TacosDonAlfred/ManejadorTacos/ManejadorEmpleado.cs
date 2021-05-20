@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AccesoADatos;
 using Entidades;
 using System.Windows.Forms;
@@ -28,7 +24,15 @@ namespace ManejadorTacos
         {
             try
             {
-                return ce.GuardarEmpleado(ee);
+                if (ce.verificarUsuario(ee.Usuario))
+                {
+                    return ce.GuardarEmpleado(ee);
+                }
+                else
+                {
+                    MessageBox.Show("El nombre de usuario ya existe, ingrese uno diferente", "Error");
+                    return "";
+                }
             }
             catch (Exception)
             {

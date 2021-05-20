@@ -29,7 +29,6 @@ namespace PresentacionDatos
                     entidadCompras = new EntidadCompras(id, dtpFecha.Text, double.Parse(txtcantidad.Text), double.Parse(txtprecio.Text), mc.GetIdProveedor(cmbproveedor.Text), mc.GetIdProductos(cmbProducto.Text));
                     string r = mc.ModificarCompra(entidadCompras);
                     Close();
-
                 }
                 else
                 {
@@ -61,8 +60,16 @@ namespace PresentacionDatos
 
         private void FrmComprasADD_Load(object sender, EventArgs e)
         {
-            mc.LlenarProveedor(cmbproveedor, "Usuarios");
-            mc.LlenarProductos(cmbProducto, "SELECT  NombreProducto FROM Productos", "Productos");
+            try
+            {
+                mc.LlenarProveedor(cmbproveedor, "Usuarios");
+                mc.LlenarProductos(cmbProducto, "SELECT  NombreProducto FROM Productos", "Productos");
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         public FrmComprasADD(EntidadCompras entidadCompras, string proveedor, string producto)

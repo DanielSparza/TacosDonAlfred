@@ -18,7 +18,15 @@ namespace PresentacionDatos
 
         private void llenarComboCategorias()
         {
-            mi.llenarCombobox(cmbCategoria);
+            try
+            {
+                mi.llenarCombobox(cmbCategoria);
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void FrmProductoAdd_Load(object sender, EventArgs e)

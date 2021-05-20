@@ -433,7 +433,6 @@ S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-do
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\Interop.AcroPDFLib.dll
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\AxInterop.AcroPDFLib.dll
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.csproj.ResolveComReference.cache
-S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FormDiseño.resources
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmCategorias.resources
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmCategoriasAdd.resources
 S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmCompras.resources
@@ -483,3 +482,4 @@ C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfre
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.frmPrincipal.resources
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmVentasDiarias.resources
 C:\Users\Ivan Reyes Ortega\Desktop\Tacos\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmVentasDiariasAdd.resources
+S:\Ejercicios de git\Taller de investigación 2\Verción final\proyecto-tacos-don-alfred\TacosDonAlfred\PresentacionDatos\obj\Debug\PresentacionDatos.FrmAlertaConexion.resources

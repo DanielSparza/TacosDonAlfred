@@ -30,12 +30,12 @@ namespace AccesoADatos
 
         public DataSet MostrarVentas(string fechaInicio, string fechaFin)
         {
-            return Mostrar(string.Format("SELECT m.Nombre AS 'Producto', SUM(d.Cantidad) * m.Precio AS 'Total' FROM menus m, detalles_ventas d, ventas v WHERE d.FkIdPlatillo = m.IdPlatillo AND d.FkIdVenta = v.IdVenta AND v.Fecha BETWEEN '{0}' AND '{1}' GROUP BY d.FkIdPlatillo;", fechaInicio, fechaFin), "detalles_ventas");
+            return Mostrar(string.Format("SELECT m.Nombre AS 'Producto', SUM(d.Cantidad) * m.Precio AS 'Total' FROM menus m, detalles_ventas d, ventas v WHERE d.FkIdPlatillo = m.IdPlatillo AND d.FkIdVenta = v.id AND v.Fecha BETWEEN '{0}' AND '{1}' GROUP BY d.FkIdPlatillo;", fechaInicio, fechaFin), "detalles_ventas");
         }
 
         public DataSet MostrarTotalVentas(string fechaInicio, string fechaFin)
         {
-            return Mostrar(string.Format("SELECT SUM(d.Cantidad * m.Precio) AS 'Total' FROM detalles_ventas d, menus m, ventas v WHERE d.FkIdPlatillo = m.IdPlatillo AND d.FkIdVenta = v.IdVenta AND v.Fecha BETWEEN '{0}' AND '{1}' GROUP BY d.FkIdPlatillo;", fechaInicio, fechaFin), "detalles_ventas");
+            return Mostrar(string.Format("SELECT SUM(d.Cantidad * m.Precio) AS 'Total' FROM detalles_ventas d, menus m, ventas v WHERE d.FkIdPlatillo = m.IdPlatillo AND d.FkIdVenta = v.id AND v.Fecha BETWEEN '{0}' AND '{1}' GROUP BY d.FkIdPlatillo;", fechaInicio, fechaFin), "detalles_ventas");
         }
 
         public DataSet MostrarAlmacen(string nombre)

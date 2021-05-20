@@ -15,7 +15,6 @@ namespace AccesoADatos
         {
             return c.Comando(string.Format("insert into Productos values(NULL, '{0}', '{1}', '{2}', '{3}')",
                 productos.Nombre, productos.Descripcion, productos.Medida, productos.FkIdCategoria));
-           
         }
         public string guardarAlmacen(int ID)
         {

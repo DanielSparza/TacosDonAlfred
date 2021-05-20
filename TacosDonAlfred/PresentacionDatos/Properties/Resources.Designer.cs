@@ -113,6 +113,26 @@ namespace PresentacionDatos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap facesadsymbolic_103723 {
+            get {
+                object obj = ResourceManager.GetObject("facesadsymbolic_103723", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_30_instagram_stories_icons55_122602 {
+            get {
+                object obj = ResourceManager.GetObject("free-30-instagram-stories-icons55_122602", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_thick_long_left_arrow {
             get {
                 object obj = ResourceManager.GetObject("icons8-thick_long_left_arrow", resourceCulture);

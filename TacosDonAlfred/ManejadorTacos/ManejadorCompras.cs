@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AccesoADatos;
 using Entidades;
 using System.Data;
@@ -10,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ManejadorTacos
 {
-   public class ManejadorCompras
+    public class ManejadorCompras
     {
         ConexionCompras mc = new ConexionCompras();
 

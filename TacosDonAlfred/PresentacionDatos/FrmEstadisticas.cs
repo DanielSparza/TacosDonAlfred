@@ -25,35 +25,43 @@ namespace PresentacionDatos
 
         public void Actualizar()
         {
-            GraficarGastos();
-            GraficarVentas();
-            GraficarAlmacen();
+            try
+            {
+                GraficarGastos();
+                GraficarVentas();
+                GraficarAlmacen();
 
-            if (cmbGraficas.Text == "Gastos")
-            {
-                panelInventario.Visible = false;
-                panelVentas.Visible = false;
-                panelGastos.Visible = true;
-                lblGastosTotales.Text = "$ " + me.obtenerTotalGastos(dtpFechaInicio.Text, dtpFechaFinal.Text);
+                if (cmbGraficas.Text == "Gastos")
+                {
+                    panelInventario.Visible = false;
+                    panelVentas.Visible = false;
+                    panelGastos.Visible = true;
+                    lblGastosTotales.Text = "$ " + me.obtenerTotalGastos(dtpFechaInicio.Text, dtpFechaFinal.Text);
+                }
+                else if (cmbGraficas.Text == "Ventas")
+                {
+                    panelGastos.Visible = false;
+                    panelInventario.Visible = false;
+                    panelVentas.Visible = true;
+                    lblTotalVentas.Text = "$ " + me.obtenerTotalVentas(dtpFechaInicio.Text, dtpFechaFinal.Text);
+                }
+                else if (cmbGraficas.Text == "Inventario")
+                {
+                    panelGastos.Visible = false;
+                    panelVentas.Visible = false;
+                    panelInventario.Visible = true;
+                }
+                else
+                {
+                    panelGastos.Visible = false;
+                    panelVentas.Visible = false;
+                    panelInventario.Visible = false;
+                }
             }
-            else if (cmbGraficas.Text == "Ventas")
+            catch (Exception)
             {
-                panelGastos.Visible = false;
-                panelInventario.Visible = false;
-                panelVentas.Visible = true;
-                lblTotalVentas.Text = "$ " + me.obtenerTotalVentas(dtpFechaInicio.Text, dtpFechaFinal.Text);
-            }
-            else if (cmbGraficas.Text == "Inventario")
-            {
-                panelGastos.Visible = false;
-                panelVentas.Visible = false;
-                panelInventario.Visible = true;
-            }
-            else
-            {
-                panelGastos.Visible = false;
-                panelVentas.Visible = false;
-                panelInventario.Visible = false;
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
             }
         }
 

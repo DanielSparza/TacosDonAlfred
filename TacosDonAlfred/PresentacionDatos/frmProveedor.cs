@@ -22,7 +22,15 @@ namespace PresentacionDatos
 
         void Actualizar()
         {
-            dtgProveedores.DataSource = mp.Mostrar(txtNombre.Text).Tables[0];
+            try
+            {
+                dtgProveedores.DataSource = mp.Mostrar(txtNombre.Text).Tables[0];
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void frmProveedor_Load(object sender, EventArgs e)

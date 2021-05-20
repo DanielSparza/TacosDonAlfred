@@ -27,7 +27,15 @@ namespace PresentacionDatos
 
         void Actualizar()
         {
-            Compritas.DataSource = mc.Mostrar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text).Tables[0];
+            try
+            {
+                Compritas.DataSource = mc.Mostrar(txtBuscar.Text, dtpFechaInicio.Text, dtpFechaFin.Text).Tables[0];
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void PtbRegresar_Click(object sender, EventArgs e)

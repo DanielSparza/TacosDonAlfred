@@ -21,7 +21,15 @@ namespace PresentacionDatos
 
         public void Actualizar()
         {
-            dtgPlatillos.DataSource = mp.Mostrar(txtBuscar.Text).Tables[0];
+            try
+            {
+                dtgPlatillos.DataSource = mp.Mostrar(txtBuscar.Text).Tables[0];
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         public void Nuevo()

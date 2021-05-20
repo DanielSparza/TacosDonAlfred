@@ -78,5 +78,28 @@ namespace AccesoADatos
             DataRow r = dt.Rows[0];
             return int.Parse(r["id"].ToString());
         }
+
+        public bool verificarUsuario(string usuario)
+        {
+            bool r = true;
+            DataTable dt = new DataTable();
+            dt = Mostrar(string.Format("select NombreUsuario from empleados"), "empleados").Tables[0];
+            object[] datos = new object[dt.Rows.Count];
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                datos[i] = dt.Rows[i]["NombreUsuario"].ToString();
+            }
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (datos[i].Equals(usuario))
+                {
+                    r = false;
+                    i = dt.Rows.Count;
+                }
+            }
+            return r;
+        }
     }
 }

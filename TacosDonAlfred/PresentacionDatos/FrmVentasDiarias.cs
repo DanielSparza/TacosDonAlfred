@@ -21,7 +21,15 @@ namespace PresentacionDatos
 
         public void Actualizar()
         {
-            dtgVentasDiarias.DataSource = mvd.Mostrar(txtProducto.Text, dtpFechaFiltro.Text,dtpFechaFin.Text).Tables[0];
+            try
+            {
+                dtgVentasDiarias.DataSource = mvd.Mostrar(txtProducto.Text, dtpFechaFiltro.Text, dtpFechaFin.Text).Tables[0];
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         public void Nuevo()

@@ -24,7 +24,15 @@ namespace PresentacionDatos
 
         public void cargarDatos(string busqueda)
         {
-            dtgInventario.DataSource = mi.mostrarProductos(busqueda).Tables[0];
+            try
+            {
+                dtgInventario.DataSource = mi.mostrarProductos(busqueda).Tables[0];
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void pbRegresar_Click(object sender, EventArgs e)

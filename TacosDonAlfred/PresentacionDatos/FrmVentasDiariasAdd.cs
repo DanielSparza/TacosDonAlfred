@@ -23,7 +23,15 @@ namespace PresentacionDatos
 
         private void llenarComboProductos()
         {
-            mvd.llenarCombobox(cmbProducto);
+            try
+            {
+                mvd.llenarCombobox(cmbProducto);
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

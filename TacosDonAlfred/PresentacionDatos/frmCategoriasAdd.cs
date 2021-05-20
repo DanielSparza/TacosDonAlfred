@@ -26,8 +26,16 @@ namespace PresentacionDatos
             {
                 if (validar(txtCategoria))
                 {
-                    string rs = mc.Guardar(new EntidadCategorias(0, txtCategoria.Text));
-                    Close();
+                    try
+                    {
+                        string rs = mc.Guardar(new EntidadCategorias(0, txtCategoria.Text));
+                        Close();
+                    }
+                    catch (Exception)
+                    {
+                        FrmAlertaConexion fac = new FrmAlertaConexion();
+                        fac.ShowDialog();
+                    }
                 }
                 else
                 {

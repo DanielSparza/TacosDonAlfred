@@ -17,12 +17,21 @@ namespace PresentacionDatos
         {
             InitializeComponent();
             me = new ManejadorEmpleado();
+
             Actualizar();
         }
 
         public void Actualizar()
         {
-            dgvEmpleados.DataSource = me.Mostrar(txtNombre.Text).Tables[0];
+            try
+            {
+                dgvEmpleados.DataSource = me.Mostrar(txtNombre.Text).Tables[0];
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         public void Nuevo()
@@ -116,6 +125,11 @@ namespace PresentacionDatos
         {
             Close();
             frmPrincipal.v = 0;
+        }
+
+        private void FrmEmpleados_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

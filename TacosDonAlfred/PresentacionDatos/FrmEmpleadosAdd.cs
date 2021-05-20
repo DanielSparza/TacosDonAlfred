@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using ManejadorTacos;
@@ -56,11 +49,19 @@ namespace PresentacionDatos
 
         public void LlenarCombo()
         {
-            cmbPuesto.Items.Add("Taquero");
-            cmbPuesto.Items.Add("Cajero");
-            cmbPuesto.Items.Add("Tortillero");
-            cmbPuesto.Items.Add("Mesero");
-            cmbPuesto.Items.Add("Administrador");
+            try
+            {
+                cmbPuesto.Items.Add("Taquero");
+                cmbPuesto.Items.Add("Cajero");
+                cmbPuesto.Items.Add("Tortillero");
+                cmbPuesto.Items.Add("Mesero");
+                cmbPuesto.Items.Add("Administrador");
+            }
+            catch (Exception)
+            {
+                FrmAlertaConexion fac = new FrmAlertaConexion();
+                fac.ShowDialog();
+            }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
